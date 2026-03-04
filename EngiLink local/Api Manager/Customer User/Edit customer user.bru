@@ -1,0 +1,32 @@
+meta {
+  name: Edit customer user
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{url-manager}}/customer-user/edit
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+body:multipart-form {
+  id: 121
+  password: abc123456
+  ~file: @file()
+  ~name: test22
+  ~katakanaName: テスト22
+  ~phoneNumber: 0901234586
+  ~email: test1@gmail.com
+  ~groupCode: STAFF
+  ~status: 1
+}
+
+settings {
+  encodeUrl: true
+}

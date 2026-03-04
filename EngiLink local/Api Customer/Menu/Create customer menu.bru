@@ -1,0 +1,40 @@
+meta {
+  name: Create customer menu
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{url}}/menu/create
+  body: json
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+body:json {
+  {
+    "type": "menu",
+    "name": "test",
+    "parent": "",
+    "order": "",
+    "title": "Test",
+    "path": "/test",
+    "authCode": "",
+    "component": "/error/404",
+    "icon": "mdi:view-dashboard",
+    "status": 1,
+    "hideInMenu": false,
+    "affixTab": false,
+    "hideChildrenInMenu": false,
+    "showFilterBar": "false",
+    "noBasicLayout": false
+  }
+}
+
+settings {
+  encodeUrl: true
+}

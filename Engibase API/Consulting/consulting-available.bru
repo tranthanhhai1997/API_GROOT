@@ -1,0 +1,28 @@
+meta {
+  name: /consulting/available
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{url}}/consulting/available?detail_id=1
+  body: none
+  auth: inherit
+}
+
+params:query {
+  detail_id: 1
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,27 @@
+meta {
+  name: Change customer user status
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{url-manager}}/customer-user/change-status
+  body: json
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+body:json {
+  {
+      "id": "105",
+      "status": "0"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

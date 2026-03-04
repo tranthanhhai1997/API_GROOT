@@ -1,0 +1,30 @@
+meta {
+  name: consulting/get-events
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{url}}/consulting/get-events?start_time=2024-09-01&end_time=2024-09-22&timezone=+07
+  body: none
+  auth: inherit
+}
+
+params:query {
+  start_time: 2024-09-01
+  end_time: 2024-09-22
+  timezone: +07
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

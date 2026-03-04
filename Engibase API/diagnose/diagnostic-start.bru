@@ -1,0 +1,24 @@
+meta {
+  name: /diagnostic/start
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url-release}}/diagnostic/start
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-release}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

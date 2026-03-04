@@ -1,0 +1,20 @@
+meta {
+  name: List customer user
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{url-manager}}/customer-user/list
+  body: json
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,28 @@
+meta {
+  name: category
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{url}}/category?get_tree=2
+  body: none
+  auth: inherit
+}
+
+params:query {
+  get_tree: 2
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

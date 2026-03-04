@@ -1,0 +1,29 @@
+meta {
+  name: user/get-holiday-apply
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{url}}/user/get-holiday-apply?page=1&limit=15
+  body: none
+  auth: none
+}
+
+params:query {
+  page: 1
+  limit: 15
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  jil-token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

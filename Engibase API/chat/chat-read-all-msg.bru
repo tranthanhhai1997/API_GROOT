@@ -1,0 +1,31 @@
+meta {
+  name: chat/read-all-msg
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{url-v2}}/chat/read-all-msg
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+body:form-urlencoded {
+  room_id: 149
+  ~type: TEXT
+  ~content: asdasd
+  ~peers: []
+}
+
+settings {
+  encodeUrl: true
+}

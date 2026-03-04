@@ -1,0 +1,20 @@
+meta {
+  name: Get pulldown items
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{url}}/pulldown/items/1
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+settings {
+  encodeUrl: true
+}

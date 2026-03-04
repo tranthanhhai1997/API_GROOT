@@ -1,0 +1,21 @@
+meta {
+  name: Delete Roles
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{url}}/role/delete
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "id": "1"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

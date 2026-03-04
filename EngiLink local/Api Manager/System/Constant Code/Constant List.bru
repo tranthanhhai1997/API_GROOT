@@ -1,0 +1,25 @@
+meta {
+  name: Constant List
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url}}/system/constant-list
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~keyword: user
+  ~limit: 100
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil-Token: {{Jil_Token}}
+}
+
+settings {
+  encodeUrl: true
+}

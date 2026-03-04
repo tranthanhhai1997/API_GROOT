@@ -1,0 +1,24 @@
+meta {
+  name: get-change-address-apply
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{url-v2}}/user/get-change-address-apply
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,29 @@
+meta {
+  name: /pages/play-change-resolution
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{url}}/pages/play-change-resolution
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+body:multipart-form {
+  loaded_duration: 30
+  loaded_resolution: 480
+}
+
+settings {
+  encodeUrl: true
+}

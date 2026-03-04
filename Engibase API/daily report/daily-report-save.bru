@@ -1,0 +1,79 @@
+meta {
+  name: daily-report/save
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{url-v2}}/daily-report/save
+  body: json
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+body:json {
+  {
+    "date": "2026-02-04",
+    "work_type": "PENDING",
+    "start_time": "08:00",
+    "end_time": "20:00",
+    "breaks_time": [
+      {
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "start": "15:00",
+        "end": "16:00"
+      }
+    ],
+    "content_summary": "1efactor Daily Report module, move logic into SQL procedure.",
+    "work_reports_data": [
+      {
+          "start": "12:00",
+          "end": "13:00",
+          "position": "SE",
+          "content": "Query analysis and execution plan review"
+      },
+      {
+          "start": "15:00",
+          "end": "17:00",
+          "position": "SE",
+          "content": "Query analysis and execution plan review"
+      }
+    ],
+    "learning_data": [
+      {
+          "start": "10:00",
+          "end": "11:00",
+          "material": "MySQL Performance Optimization - Chapter 3",
+          "content": "Query execution plans and index strategies"
+      },
+      {
+          "start": "17:00",
+          "end": "18:00",
+          "material": "MySQL Performance Optimization - Chapter 3",
+          "content": "Query execution plans and index strategies"
+      }
+    ],
+    "daily_reflection": "1Good productivity, SQL logic is more stable now.",
+    "next_day_goal": "1Complete stored procedure for report update.",
+    "question": "1Should we add limit check for break overlaps?",
+    "self_lv": 1,
+    "health_lv": 10,
+    "is_draft": 0
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

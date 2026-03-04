@@ -1,0 +1,27 @@
+meta {
+  name: user/login
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{url}}/user/login
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+}
+
+body:form-urlencoded {
+  data: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJuZXN2MDUyQGxlYXJuaW5naWZ0LmNvbSIsInBhc3N3b3JkIjoiYWJjMTIzNDU2IiwiZXhwIjoxNzU3MTI4MzU3LCJhdXRoX3Rva2VuIjoiZWQtdnpja0xRVlc0cUpoLVQyc0RObDpBUEE5MWJFQm5KdzRzcDBtemprQWVUWkNvalo5UEY0ejRySkdoUnlNZUw2ajJZZ1NPR2xteVEzU191T1lVeHZEVUhNNlRKczMtMERqNTRjZVlrUEJLNWk0Z2xDSldzblVuWXoxNjBDVGxNRFJHVVJmcjhMUFJOYyJ9.dGoAImNEQ2EqLFKh1ESilarQWE2fr8pFzhjeGG1fBoe3d_TVDqNSfYulPIMF8T-7iJXYENPAkqBaYN28fz5DlA
+}
+
+settings {
+  encodeUrl: true
+}

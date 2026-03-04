@@ -1,0 +1,28 @@
+meta {
+  name: chat/room-detail
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{url-v2}}/chat/room-detail?id=117
+  body: none
+  auth: inherit
+}
+
+params:query {
+  id: 117
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

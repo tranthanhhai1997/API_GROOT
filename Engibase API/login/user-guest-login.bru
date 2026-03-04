@@ -1,0 +1,32 @@
+meta {
+  name: user/guest-login
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{url}}/user/guest-login
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+}
+
+body:form-urlencoded {
+  data: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwMDAwMDEiLCJwYXNzd29yZCI6ImFiYzEyMzQ1NiIsImV4cCI6MTY4MjQxNTM3N30.xM0MbCYKngxyRViwwmSkXoDkHBchgGsJoQdE018qOuirwMug-_eI4GZ58Xqdf-MpoTtOKUJEGH-E9GBt3xnlhA
+}
+
+script:post-response {
+  var jsonData = res.getBody();
+  bru.setEnvVar("token", jsonData.data.token);
+}
+
+settings {
+  encodeUrl: true
+}

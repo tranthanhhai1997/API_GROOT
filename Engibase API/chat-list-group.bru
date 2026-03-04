@@ -1,0 +1,30 @@
+meta {
+  name: chat/list-group
+  type: http
+  seq: 20
+}
+
+get {
+  url: {{url-engibase}}/chat/list-group
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~order[last_sent_time]: DESC
+  ~order[unread_count]: DESC
+  ~: DESC
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: tn4381p1usm890gb7h9o95vioe
+}
+
+settings {
+  encodeUrl: true
+}

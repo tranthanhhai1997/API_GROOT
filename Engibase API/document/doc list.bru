@@ -1,0 +1,29 @@
+meta {
+  name: doc list
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url}}/doc/list?order[id]=DESC&limit=50
+  body: none
+  auth: inherit
+}
+
+params:query {
+  order[id]: DESC
+  limit: 50
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

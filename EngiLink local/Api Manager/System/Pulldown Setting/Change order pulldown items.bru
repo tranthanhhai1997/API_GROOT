@@ -1,0 +1,20 @@
+meta {
+  name: Change order pulldown items
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{url}}/pulldown/items/sort-order
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  id: 1
+  order: 5
+}
+
+settings {
+  encodeUrl: true
+}

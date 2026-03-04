@@ -1,0 +1,31 @@
+meta {
+  name: chat/read-mgs-by-ids
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{url}}/chat/read-msg-by-ids
+  body: json
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+body:json {
+  {
+      "room_id": 98,
+      "ids": [66]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

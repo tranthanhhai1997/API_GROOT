@@ -1,0 +1,24 @@
+meta {
+  name: daily-report/copy-previous
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{url-v2}}/daily-report/copy-previous
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

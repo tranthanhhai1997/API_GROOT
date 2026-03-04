@@ -1,0 +1,30 @@
+meta {
+  name: help/faqByCate
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{url}}/help/faq-by-cate?cate_id=8&limit=10&page=1
+  body: none
+  auth: inherit
+}
+
+params:query {
+  cate_id: 8
+  limit: 10
+  page: 1
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

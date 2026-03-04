@@ -1,0 +1,24 @@
+meta {
+  name: daily-report/get-position_1
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{url-v2}}/daily-report/get-position
+  body: none
+  auth: none
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,43 @@
+meta {
+  name: daily-report/learning-targets
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{url}}/daily-report/learning-targets
+  body: json
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+body:json {
+  {
+    "year": 2025,
+    "month": 1,
+     "target_title": "learning target data",
+    "learning_targets": [
+      {
+        "content": "abc",
+        "target_hours": 123
+      },
+      {
+        "content": "xyz",
+        "target_hours": 13
+      }
+    ]
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

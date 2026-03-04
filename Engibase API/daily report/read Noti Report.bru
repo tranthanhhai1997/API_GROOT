@@ -1,0 +1,29 @@
+meta {
+  name: read Noti Report
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{url}}/daily-report/read-noti
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+body:multipart-form {
+  ids: 9
+  dr_id: 1
+}
+
+settings {
+  encodeUrl: true
+}

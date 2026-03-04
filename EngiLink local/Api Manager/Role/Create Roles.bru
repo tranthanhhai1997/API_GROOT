@@ -1,0 +1,29 @@
+meta {
+  name: Create Roles
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://api.manager.engilink.groot/role/create
+  body: json
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+body:json {
+  {
+      "name": "BOSS",
+      "status": "0", // 0 | 1
+      "remark": "mô ta role",
+      "permissions": ["2", "4", "6", "7"] // mảng id của menu
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,29 @@
+meta {
+  name: inquiry/reply
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{url-v2}}/inquiry/reply/412
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  version: {{version}}
+  Jil-Token: {{token}}
+  ~Content-Type: {{Content-Type}}
+  ~App-Version: {{App-Version}}
+  ~device-id: {{device-id}}
+}
+
+body:form-urlencoded {
+  loaded_resolution: 200
+  loaded_duration: 25
+}
+
+settings {
+  encodeUrl: true
+}

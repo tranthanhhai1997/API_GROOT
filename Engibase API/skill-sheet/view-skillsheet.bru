@@ -1,0 +1,31 @@
+meta {
+  name: view-skillsheet
+  type: http
+  seq: 7
+}
+
+get {
+  url: https://api.eng-dev1.g-root.com/mail/dl-skill-sheet?code=Hp7f8jKvGrVbq0rqAv3&fname=2026_01%2F2026_01_16_ss_u_1002_696a0a5f129f0&token=N3%252BVqdC27Ut11IOB1WRHow%253D%253D&pn_id=1002&no-authen=1&isView=true
+  body: none
+  auth: none
+}
+
+params:query {
+  code: Hp7f8jKvGrVbq0rqAv3
+  fname: 2026_01%2F2026_01_16_ss_u_1002_696a0a5f129f0
+  token: N3%252BVqdC27Ut11IOB1WRHow%253D%253D
+  pn_id: 1002
+  no-authen: 1
+  isView: true
+  ~: 
+  ~: 
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

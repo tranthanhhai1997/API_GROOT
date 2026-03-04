@@ -1,0 +1,28 @@
+meta {
+  name: appointer/call-log
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{url-v2}}/appointer/call-log
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+body:form-urlencoded {
+  data: {"0909730186":[{"server_id":"","app_logs_id":"997fa600-3136-11f0-a7d7-579816ef127234essfd","contact_id":"","name":"","is_web":false,"call_type":"income","staff_phone":"0812429597","logs":{"start_call":{"date":1747277102,"duration":0,"timezone":"+07"},"end_call":{"date":0,"duration":0,"timezone":"+07"}},"call_status":[]}]}
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,31 @@
+meta {
+  name: upload-call-record
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{url}}/appointer/upload-call-record
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-release}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+body:multipart-form {
+  file: @file(/C:/Users/PC/Downloads/0909730186-1770706609502.m4a)
+  call_id: 354
+  duration: 12
+  app_log_id: 9eaaacf0-064d-11f1-a489-afb721eb9b39
+}
+
+settings {
+  encodeUrl: true
+}

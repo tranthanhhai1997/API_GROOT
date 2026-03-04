@@ -1,0 +1,29 @@
+meta {
+  name: pages/page/view-complete
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{url}}/pages/page/view-complete
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+body:multipart-form {
+  page_id: 102
+  is_complete: COMPLETED
+}
+
+settings {
+  encodeUrl: true
+}

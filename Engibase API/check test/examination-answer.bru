@@ -1,0 +1,34 @@
+meta {
+  name: examination/answer
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{url}}/examination/web-view/check-test?id=1
+  body: text
+  auth: inherit
+}
+
+params:query {
+  id: 1
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: rlu587h07v29o0aoce37gkklrf
+}
+
+body:text {
+  {
+      "id": '1'
+  }
+}
+
+settings {
+  encodeUrl: true
+}

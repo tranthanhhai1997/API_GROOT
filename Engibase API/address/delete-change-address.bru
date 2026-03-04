@@ -1,0 +1,28 @@
+meta {
+  name: delete-change-address
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{url-v2}}/user/delete-change-address
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token-engibase}}
+}
+
+body:form-urlencoded {
+  id: 
+}
+
+settings {
+  encodeUrl: true
+}

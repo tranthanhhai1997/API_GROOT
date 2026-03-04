@@ -1,0 +1,25 @@
+meta {
+  name: Get Applicant Detail
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{url}}/applicants/detail?id=3
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  id: 3
+  ~interviewFlow: 8
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,29 @@
+meta {
+  name: Add new applicant
+  type: http
+  seq: 7
+}
+
+post {
+  url: 
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  lastName: string
+  firstName: string
+  lastNameFurigana: string
+  firstNameFurigana: string
+  gender: number
+  birthday: string
+  age: number
+  emailAddress1: string
+  emailAddress2: string
+  phoneNumber1: number
+  phoneNumber2: number
+}
+
+settings {
+  encodeUrl: true
+}

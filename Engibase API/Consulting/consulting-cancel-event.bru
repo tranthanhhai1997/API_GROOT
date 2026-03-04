@@ -1,0 +1,30 @@
+meta {
+  name: /consulting/cancel-event
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{url}}/consulting/cancel-event
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+body:form-urlencoded {
+  cc_id: 1
+  start_time: 2024/09/18 09:00
+  end_time: 2024/09/18 10:00
+}
+
+settings {
+  encodeUrl: true
+}

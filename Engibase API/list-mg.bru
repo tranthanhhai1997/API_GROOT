@@ -1,0 +1,33 @@
+meta {
+  name: list-mg
+  type: http
+  seq: 21
+}
+
+get {
+  url: {{url-engibase}}/chat/list-group?name=&order%5Blast_sent_time%5D=DESC&order%5Bunread_count%5D=&page=1
+  body: none
+  auth: inherit
+}
+
+params:query {
+  name: 
+  order%5Blast_sent_time%5D: DESC
+  order%5Bunread_count%5D: 
+  page: 1
+  ~order[unread_count]: DESC
+  ~: DESC
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: 7fvdcojl9sqi3ppt1ed25f8oq9
+}
+
+settings {
+  encodeUrl: true
+}

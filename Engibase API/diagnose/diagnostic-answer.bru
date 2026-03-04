@@ -1,0 +1,30 @@
+meta {
+  name: /diagnostic/answer
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url-release}}/diagnostic/answer?type=enneagram&result_type=TYPE5&data={"2":"Q4","3":"Q7","4":"Q10","5":"Q14","6":"Q19","7":"Q26","8":"Q34","9":"TYPE5"}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  type: enneagram
+  result_type: TYPE5
+  data: {"2":"Q4","3":"Q7","4":"Q10","5":"Q14","6":"Q19","7":"Q26","8":"Q34","9":"TYPE5"}
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-release}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

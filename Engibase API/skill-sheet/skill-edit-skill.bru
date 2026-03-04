@@ -1,0 +1,28 @@
+meta {
+  name: /skill/edit-skill
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{url-v2}}/skill/edit-skill
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  Jil-Token: {{token}}
+  device-id: {{device-id}}
+}
+
+body:form-urlencoded {
+  data: {"personal":{"id":"4364","years_exp":{"year":"10","month":"1"},"nearest_station":{"line":"Isawa Onsen Line","station":"Isawa Onsen Station"},"development_environment":[{"skill":"Java","year":"9","month":"10"},{"skill":"JavaScript","year":"8","month":"6"},{"skill":"Python","year":"7","month":"3"},{"skill":"PHP","year":"6","month":"2"},{"skill":"C#","year":"5","month":"8"},{"skill":".NET","year":"5","month":"8"},{"skill":"SQL Server","year":"7","month":""},{"skill":"Docker","year":"3","month":"6"},{"skill":"React","year":"4","month":"2"},{"skill":"Node.js","year":"5","month":""},{"skill":"PHP1","year":"4","month":"1"},{"skill":"PHP2","year":"2","month":"2"}],"note":"222 Experienced full-stack developer with strong background in enterprise applications","condition":["Remote work available","Flexible hours","Immediate availability"]},"skillsheet":[{"start_date":{"year":"2023","month":"1"},"participating":true,"departure_date":{"year":"2026","month":"1"},"period":36,"role":"Senior","team_size":8,"company_size":150,"overview":"line 1","responsibilities":"line 2","achievements":"line 3","comment":"line 4","skills":{"os":["Linux","Windows Server"],"db":["PostgreSQL","Redis","MongoDB"],"lang":["Java","JavaScript","TypeScript","SQL"],"tool":["Spring Boot","React","Docker","Kubernetes","Jenkins","Git"]},"responsible":{"analysis":true,"definition":true,"exterior_design":true,"internal_design":true,"development_manufacturing":true,"unit_test":true,"integration_test":true,"general_test":true,"environmental_design":true,"environmental_construction":true,"operational_design":false,"operation_maintenance":true,"other":false},"remarks":"Key technologies: Java 17, Spring Boot 3.x, React 18, PostgreSQL 14, Docker, Kubernetes, AWS (EC2, S3, RDS, CloudFront)","order":1},{"start_date":{"year":"2021","month":"6"},"participating":true,"departure_date":{"year":"2023","month":"1"},"period":19,"role":"Mobile","team_size":12,"company_size":500,"overview":"Developed a secure mobile banking application for iOS and Android platforms using React Native. The app featured account management, money transfers, bill payments, and investment tracking. Implemented biometric authentication, end-to-end encryption, and compliance with banking security standards.","responsibilities":"Developed cross-platform mobile features using React Native. Implemented secure authentication and authorization flows. Integrated with backend banking APIs. Conducted security testing and vulnerability assessments.","achievements":"Successfully launched app with 4.8-star rating on both App Store and Google Play. Achieved 99.9% uptime during first year of operation. Implemented features that reduced customer support calls by 35%.","comment":"Gained valuable experience in mobile development and financial technology regulations.","skills":{"os":["iOS","Android"],"db":["SQLite","Firebase"],"lang":["JavaScript","TypeScript","Swift","Kotlin"],"tool":["React Native","Redux","Firebase","Xcode","Android Studio","Fastlane"]},"responsible":{"analysis":true,"definition":true,"exterior_design":true,"internal_design":true,"development_manufacturing":true,"unit_test":true,"integration_test":true,"general_test":true,"environmental_design":false,"environmental_construction":false,"operational_design":false,"operation_maintenance":true,"other":false},"remarks":"Key technologies: React Native 0.68, TypeScript, Firebase Auth, Biometric Authentication, AES Encryption, REST APIs","order":2},{"start_date":{"year":"2020","month":"3"},"participating":true,"departure_date":{"year":"2021","month":"6"},"period":15,"role":"Backend","team_size":10,"company_size":200,"overview":"Built a comprehensive healthcare management system for hospitals and clinics. The system managed patient records, appointment scheduling, prescription management, and billing. Ensured HIPAA compliance and implemented robust data security measures.","responsibilities":"Designed and developed backend services using Python Django. Created RESTful APIs for frontend integration. Implemented data encryption and access control mechanisms. Optimized database queries for performance.","achievements":"Reduced appointment scheduling conflicts by 90% through intelligent scheduling algorithm. Improved system response time by 50%. Successfully passed HIPAA compliance audit.","comment":"This project deepened my understanding of healthcare IT requirements and data security best practices.","skills":{"os":["Linux Ubuntu"],"db":["MySQL","Redis"],"lang":["Python","SQL"],"tool":["Django","Django REST Framework","Celery","RabbitMQ","Nginx","Docker"]},"responsible":{"analysis":true,"definition":true,"exterior_design":false,"internal_design":true,"development_manufacturing":true,"unit_test":true,"integration_test":true,"general_test":true,"environmental_design":true,"environmental_construction":true,"operational_design":true,"operation_maintenance":true,"other":false},"remarks":"Key technologies: Python 3.9, Django 3.2, MySQL 8.0, Redis, Docker, HIPAA Compliance, AES-256 Encryption","order":3}],"is_draft":0,"deadline":"","ssh_id":"313"}
+}
+
+settings {
+  encodeUrl: true
+}

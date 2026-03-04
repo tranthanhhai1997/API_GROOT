@@ -1,0 +1,28 @@
+meta {
+  name: daily-report/detail
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url-v2}}/daily-report/detail?id=302
+  body: formUrlEncoded
+  auth: inherit
+}
+
+params:query {
+  id: 302
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,29 @@
+meta {
+  name: /inquiry/unread
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{url-v2}}/inquiry/unread
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  version: {{version}}
+  Jil-Token: {{token}}
+  ~Content-Type: {{Content-Type}}
+  ~App-Version: {{App-Version}}
+  ~device-id: {{device-id}}
+}
+
+body:form-urlencoded {
+  id: 200
+  ~loaded_duration: 25
+}
+
+settings {
+  encodeUrl: true
+}

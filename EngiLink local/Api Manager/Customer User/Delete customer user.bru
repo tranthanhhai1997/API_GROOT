@@ -1,0 +1,26 @@
+meta {
+  name: Delete customer user
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{url-manager}}/customer-user/delete
+  body: json
+  auth: inherit
+}
+
+headers {
+  Jil_Token: {{Jil_Token}}
+  Jil-Public-Key: {{Jil-Public-Key}}
+}
+
+body:json {
+  {
+      "id": "104"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

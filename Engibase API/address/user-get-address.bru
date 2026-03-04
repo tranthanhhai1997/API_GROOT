@@ -1,0 +1,27 @@
+meta {
+  name: user/get-address
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url-v2}}/user/get-address
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~: 
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

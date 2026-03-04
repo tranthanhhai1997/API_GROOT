@@ -1,0 +1,25 @@
+meta {
+  name: Change status menu
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{url}}/menu/change-status
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil-token: {{Jil_Token}}
+}
+
+body:multipart-form {
+  id: 8
+  status: 0
+}
+
+settings {
+  encodeUrl: true
+}

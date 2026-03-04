@@ -1,0 +1,29 @@
+meta {
+  name: GET template list
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url}}/template
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  ~title: japan
+  ~status: 0
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+body:multipart-form {
+  temp_title: Template 3
+}
+
+settings {
+  encodeUrl: true
+}

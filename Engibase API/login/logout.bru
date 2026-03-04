@@ -1,0 +1,32 @@
+meta {
+  name: logout
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://api.app-engineer.local/user/logout
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+}
+
+body:multipart-form {
+  move_date: 2023/05/24
+  zipcode: 001000
+  address: asd  df gvfg fg456
+  pv_name: pv_name 56
+  tower: tower
+  data: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwMDAwMDEiLCJwYXNzd29yZCI6ImFiYzEyMzQ1NiIsImV4cCI6MTY4MjQxNTM3N30.xM0MbCYKngxyRViwwmSkXoDkHBchgGsJoQdE018qOuirwMug-_eI4GZ58Xqdf-MpoTtOKUJEGH-E9GBt3xnlhA
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,31 @@
+meta {
+  name: consulting/event-state
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{url}}/consulting/event-state?ccd_id=5&start_time=2024/09/12 09:00&end_time=2024/09/12 10:00&timezone=+07
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ccd_id: 5
+  start_time: 2024/09/12 09:00
+  end_time: 2024/09/12 10:00
+  timezone: +07
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

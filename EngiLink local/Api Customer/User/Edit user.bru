@@ -1,0 +1,31 @@
+meta {
+  name: Edit user
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{url}}/user/edit
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+body:multipart-form {
+  file: @file(/C:/Users/Tan Lam/Downloads/test.jpg)
+  id: 5
+  ~name: test
+  ~katakanaName: テスト
+  ~phoneNumber: 0901234586
+  ~email: test1@gmail.com
+  ~groupCode: STAFF
+  ~status: 1
+}
+
+settings {
+  encodeUrl: true
+}

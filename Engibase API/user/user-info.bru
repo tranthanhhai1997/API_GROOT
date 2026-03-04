@@ -1,0 +1,35 @@
+meta {
+  name: user/info
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url}}/user/info
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+body:multipart-form {
+  pv_name: pv_name 56
+  tower: tower
+  notify_state: true
+  ~move_date: 2023/05/24
+  ~zipcode: 001000
+  ~address: asd  df gvfg fg456
+  ~name_json[last]: hai
+  ~name_json[first]: tran
+}
+
+settings {
+  encodeUrl: true
+}

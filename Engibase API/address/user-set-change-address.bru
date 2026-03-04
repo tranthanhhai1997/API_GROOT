@@ -1,0 +1,32 @@
+meta {
+  name: user/set-change-address
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{url}}/user/set-change-address
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{Jil-Token}}
+}
+
+body:form-urlencoded {
+  pv_name: aaaa
+  tower: bbbbb
+  address: 12 trần hưng đạo
+  move_date: 2023/06/01
+  ~zipcode: 1200000
+}
+
+settings {
+  encodeUrl: true
+}

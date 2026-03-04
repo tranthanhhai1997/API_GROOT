@@ -1,0 +1,29 @@
+meta {
+  name: examination/list
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url}}/examination/list?limit=20&cate_id=1
+  body: none
+  auth: inherit
+}
+
+params:query {
+  limit: 20
+  cate_id: 1
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token-engibase}}
+}
+
+settings {
+  encodeUrl: true
+}

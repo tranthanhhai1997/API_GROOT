@@ -1,0 +1,30 @@
+meta {
+  name: notify/list
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{url}}/notify/list?cate_id=5&limit=10&page=2
+  body: none
+  auth: inherit
+}
+
+params:query {
+  cate_id: 5
+  limit: 10
+  page: 2
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token-engibase}}
+}
+
+settings {
+  encodeUrl: true
+}

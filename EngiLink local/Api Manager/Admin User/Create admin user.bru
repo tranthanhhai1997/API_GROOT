@@ -1,0 +1,32 @@
+meta {
+  name: Create admin user
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{url-manager}}/admin-user/create
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+body:multipart-form {
+  file: @file(/C:/Users/Tan Lam/OneDrive/Pictures/Screenshots/Screenshot 2025-10-01 152306.png)
+  name: Test_4
+  katakanaName: テスト 4
+  phoneNumber: 0901234567
+  email: test_4@example.com
+  password: 12345678
+  confirmPassword: 12345678
+  groupCode: STAFF
+  status: 1
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,31 @@
+meta {
+  name: Create customer user
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{url-manager}}/customer-user/create
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+body:multipart-form {
+  file: @file(/C:/Users/Tan Lam/Downloads/test.jpg)
+  name: Test 2
+  katakanaName: テスト2
+  phoneNumber: 0901234567
+  email: test_2@example.com
+  password: 1234
+  confirmPassword: 1234
+  status: 1
+}
+
+settings {
+  encodeUrl: true
+}

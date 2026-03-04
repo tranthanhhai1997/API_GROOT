@@ -1,0 +1,29 @@
+meta {
+  name: appointer/update-call-status
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{url-v2}}/appointer/update-call-status
+  body: formUrlEncoded
+  auth: none
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+body:form-urlencoded {
+  server_id: 414
+  call_status[0]: [DIRECT_PROPOSAL]
+}
+
+settings {
+  encodeUrl: true
+}

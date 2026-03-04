@@ -1,0 +1,28 @@
+meta {
+  name: user/delete-holiday
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{url-v2}}/user/delete-holiday
+  body: formUrlEncoded
+  auth: none
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  jil-token: {{token}}
+}
+
+body:form-urlencoded {
+  id: 6
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,33 @@
+meta {
+  name: user/set-holiday
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{url}}/user/set-holiday
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+body:form-urlencoded {
+  datetime: 2026/02/10
+  duration: 420
+  start_time: 10:00
+  end_time: 17:00
+  reason: test
+  ~id: 228
+}
+
+settings {
+  encodeUrl: true
+}

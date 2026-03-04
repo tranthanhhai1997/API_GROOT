@@ -1,0 +1,24 @@
+meta {
+  name: doc learning list
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{url}}/doc/learning-list
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

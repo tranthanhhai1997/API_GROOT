@@ -1,0 +1,37 @@
+meta {
+  name: appointer/list-contact
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{url-v2}}/appointer/list-contact?limit=10&area_code=84&phone=0909730
+  body: formUrlEncoded
+  auth: inherit
+}
+
+params:query {
+  limit: 10
+  area_code: 84
+  phone: 0909730
+  ~page: 3
+  ~order[time_called]: ASC
+  ~keyword: 
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+body:form-urlencoded {
+  ~limit: 100
+}
+
+settings {
+  encodeUrl: true
+}

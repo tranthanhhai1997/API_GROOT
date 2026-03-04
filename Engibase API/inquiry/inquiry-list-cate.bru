@@ -1,0 +1,29 @@
+meta {
+  name: /inquiry/list-cate
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url-v2}}/inquiry/list-cate
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+body:form-urlencoded {
+  loaded_resolution: 200
+  loaded_duration: 25
+}
+
+settings {
+  encodeUrl: true
+}

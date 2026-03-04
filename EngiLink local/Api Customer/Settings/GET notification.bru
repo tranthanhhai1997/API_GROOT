@@ -1,0 +1,20 @@
+meta {
+  name: GET notification
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url}}/settings/notification
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

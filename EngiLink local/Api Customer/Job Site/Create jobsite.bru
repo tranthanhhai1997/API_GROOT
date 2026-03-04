@@ -1,0 +1,29 @@
+meta {
+  name: Create jobsite
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{url}}/jobsite/create
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+body:multipart-form {
+  account_id: ITViec
+  email: account@itviec-vn.com
+  password: abc123456
+  url_login: https://www.itviec.com/login
+  url_chat: https://www.itviec.com/chat
+  configs: {"customer_id":"GreeCusID7","staff_id":"GreeStaffE","site":"green","allow_multiple_login":false}
+}
+
+settings {
+  encodeUrl: true
+}

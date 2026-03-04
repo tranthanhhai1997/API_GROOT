@@ -1,0 +1,27 @@
+meta {
+  name: local login
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{url}}/user/login
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+}
+
+body:multipart-form {
+  data: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJuZXN2MDUyQGxlYXJuaW5naWZ0LmNvbSIsInBhc3N3b3JkIjoiYWJjMTIzNDU2IiwiZXhwIjoxNzgyNDE1Mzc3fQ.OFTDniSHY9fxYEuoL48YFHos0KH5GZcOCK6CqtwcM6Ad1X20SsJJSok9vuzHS4GGitCbdW7BltITFZWdEYlSCg
+}
+
+settings {
+  encodeUrl: true
+}

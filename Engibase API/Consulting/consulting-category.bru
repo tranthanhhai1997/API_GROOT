@@ -1,0 +1,23 @@
+meta {
+  name: consulting/category
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{url-release}}/consulting/category
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-release}}
+  App-Version: {{App-Version}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

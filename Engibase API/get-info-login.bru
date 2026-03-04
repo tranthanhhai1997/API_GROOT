@@ -1,0 +1,23 @@
+meta {
+  name: get-info-login
+  type: http
+  seq: 24
+}
+
+get {
+  url: {{url-v2}}/get-info-login
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+}
+
+settings {
+  encodeUrl: true
+}

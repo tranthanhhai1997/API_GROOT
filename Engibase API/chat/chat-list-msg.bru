@@ -1,0 +1,37 @@
+meta {
+  name: chat/list-msg
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{url}}/chat/list-msg?room_id=121
+  body: formUrlEncoded
+  auth: inherit
+}
+
+params:query {
+  room_id: 121
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+body:form-urlencoded {
+  room_id: 38
+  type: VIDEO
+  content: {"vtest_y8Ts7ugadjigj18z4ht_app":{"status":"calling","type":"VIDEO"},"vtest_O070mmMbWuuuy70u4v_app":{"status":"answer","type":"VIDEO"},"vtest_jnsr4vu7v31u_app":{"status":"calling","type":"VIDEO"}}
+  uid: 886450943
+  is_end_calling: 1
+  ~peers: [vtest_O070mmMbWuuuy70u4v_app]
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,29 @@
+meta {
+  name: /skill/skill-history
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://api.test.engibase.com/skill/download?id=291
+  body: none
+  auth: inherit
+}
+
+params:query {
+  id: 291
+  ~month: 01
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  Jil-Token: {{token}}
+  device-id: {{device-id}}
+}
+
+settings {
+  encodeUrl: true
+}

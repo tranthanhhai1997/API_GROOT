@@ -1,0 +1,28 @@
+meta {
+  name: help/middleContact
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url-v2}}/help/middle-contact?source=daily_report
+  body: none
+  auth: inherit
+}
+
+params:query {
+  source: daily_report
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

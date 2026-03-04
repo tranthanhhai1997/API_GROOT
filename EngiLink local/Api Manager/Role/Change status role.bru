@@ -1,0 +1,25 @@
+meta {
+  name: Change status role
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{url}}/role/change-status
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: com.learningift.engilink
+  Jil-token: bosfhs13htrl6tvj8fg2mbtuck
+}
+
+body:multipart-form {
+  id: 3
+  status: 1
+}
+
+settings {
+  encodeUrl: true
+}

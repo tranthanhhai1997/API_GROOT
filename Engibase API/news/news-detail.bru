@@ -1,0 +1,32 @@
+meta {
+  name: news/detail
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{url-v2}}/news/detail?id=1
+  body: formUrlEncoded
+  auth: none
+}
+
+params:query {
+  id: 1
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  jil-token: {{token}}
+}
+
+body:form-urlencoded {
+  data: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwMDAwMDIiLCJwYXNzd29yZCI6IjEyMzQ1Njc4YSIsImV4cCI6MTY5NjM5MzgyOSwiYXV0aF90b2tlbiI6ImV4WS1vRU9VMTBpV3NHNnVxeGxnN2M6QVBBOTFiRXc4M1RtbmVkZHJpaHd5ZGVtM2Zub2FXanZuWWxNdExMYkFHQ0lOcWplVDJWOXFiODNuaU1JVGtHT2JSVkxPY19yMkJVaVpGdGlWTmZCOUxCQ2Y3cXlTeGY2SHI1dnJSVC1tSlpMOGtkbDE5SG80UHZSbkxJMzV3a0xmcWpDc1FpdjVfY00ifQ.kg99GrHtmFshuxVi9262a2CWIXi8YhgEhdeYu9SvsGQYK7NHdiRjcLx_dd9L-Ca82O7uhhP5gplbIt_bnUrM8A
+}
+
+settings {
+  encodeUrl: true
+}

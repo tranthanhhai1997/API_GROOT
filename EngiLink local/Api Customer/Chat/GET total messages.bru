@@ -1,0 +1,38 @@
+meta {
+  name: GET total messages
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{url}}/chat/filter-total-messages?name=Bích&recruitment_status=0&only_send_error=0&within3days=0&channel=44
+  body: none
+  auth: inherit
+}
+
+params:query {
+  name: Bích
+  recruitment_status: 0
+  only_send_error: 0
+  within3days: 0
+  channel: 44
+  ~code: USR005
+  ~selection_process: 3
+  ~selection_step: 13
+  ~phone: 0923456789
+  ~email: linh.pham.alt@email.com
+  ~job_title: エンジニア
+  ~latest_subject: 必要
+  ~startDate: 2024/10/22
+  ~endDate: 2024/10/24
+  ~user_id: 102
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+settings {
+  encodeUrl: true
+}

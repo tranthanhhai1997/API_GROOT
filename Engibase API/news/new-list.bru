@@ -1,0 +1,24 @@
+meta {
+  name: new/list
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url-v2}}/news/list
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  Jil-Token: {{token}}
+  device-id: {{device-id}}
+}
+
+settings {
+  encodeUrl: true
+}

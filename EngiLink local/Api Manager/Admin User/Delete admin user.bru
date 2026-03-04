@@ -1,0 +1,21 @@
+meta {
+  name: Delete admin user
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{url}}/admin-user/delete
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "id": "1"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

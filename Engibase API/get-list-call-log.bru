@@ -1,0 +1,29 @@
+meta {
+  name: get-list-call-log
+  type: http
+  seq: 19
+}
+
+get {
+  url: {{url-v2}}/appointer/get-list-call-log?page=8&limit=20
+  body: none
+  auth: inherit
+}
+
+params:query {
+  page: 8
+  limit: 20
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

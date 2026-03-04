@@ -1,0 +1,30 @@
+meta {
+  name: /payslip/get-time-min-max
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url-v2}}/payslip/get-time-min-max
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  jil-token: {{token}}
+}
+
+body:form-urlencoded {
+  name_json: 
+  pv_name: test
+  tower: test
+}
+
+settings {
+  encodeUrl: true
+}

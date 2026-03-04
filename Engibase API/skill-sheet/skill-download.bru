@@ -1,0 +1,28 @@
+meta {
+  name: /skill/download
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{url}}/skill/download
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~: 
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  Jil-Token: {{token}}
+  device-id: {{device-id}}
+}
+
+settings {
+  encodeUrl: true
+}

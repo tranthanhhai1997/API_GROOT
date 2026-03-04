@@ -1,0 +1,24 @@
+meta {
+  name: GET template detail
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{url}}/template/detail?id=10
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  id: 10
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+settings {
+  encodeUrl: true
+}

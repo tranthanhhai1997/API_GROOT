@@ -1,0 +1,29 @@
+meta {
+  name: /category/get-business-category
+  type: http
+  seq: 23
+}
+
+get {
+  url: {{url}}/category/get-business-category
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~bCate: 115
+  ~mCate: 2
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  Jil-Token: {{token}}
+  device-id: {{device-id}}
+}
+
+settings {
+  encodeUrl: true
+}

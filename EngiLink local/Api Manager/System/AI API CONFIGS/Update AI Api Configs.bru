@@ -1,0 +1,32 @@
+meta {
+  name: Update AI Api Configs
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{url}}/system/ai-api-configs/update
+  body: json
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+body:json {
+  {
+      "id": "5",
+      "type": "PUSH_NOTIFY",
+      "key": "sdaasdasd",
+      "configs": "",
+      "ver": "",
+      "status": "1",
+      "test": "1"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

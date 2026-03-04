@@ -1,0 +1,22 @@
+meta {
+  name: Edit pulldown items
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{url}}/pulldown/items/edit
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  id: 1
+  category_id: 1
+  name: test11111
+  status: 1
+}
+
+settings {
+  encodeUrl: true
+}

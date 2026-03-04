@@ -1,0 +1,138 @@
+meta {
+  name: /skill/preview-skill
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{url}}/skill/preview-skill
+  body: formUrlEncoded
+  auth: inherit
+}
+
+params:query {
+  ~: 
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  Jil-Token: {{token}}
+  device-id: {{device-id}}
+}
+
+body:form-urlencoded {
+  data: '''
+    {
+            "personal": {
+                "id": "441776",
+                "fullname": "TQ TQ",
+                "gender": "MALE",
+                "birthday": "1992年1月 32歳",
+                "years_exp": "10",
+                "adr_line": "",
+                "memo": "",
+                "skill_overview": "Java, Kotlin, Flutter",
+                "skill_manual": [
+                    {
+                        "skill": "Java",
+                        "exp": "10",
+                        "type": "year"
+                    },
+                    {
+                        "skill": "Kotlin",
+                        "exp": "3",
+                        "type": "year"
+                    },
+                    {
+                        "skill": "Flutter",
+                        "exp": "2",
+                        "type": "year"
+                    }
+                ],
+                "degree": [
+                    "Degree A, B, C"
+                ]
+            },
+            "skillsheet": [
+                {
+                    "id": "127",
+                    "start_time": {
+                        "year": "2024",
+                        "month": "1"
+                    },
+                    "participating": "on",
+                    "end_time": {
+                        "year": "2024",
+                        "month": "10"
+                    },
+                    "period_time": 9,
+                    "position": "Manager",
+                    "team_size": 5,
+                    "company_size": 20,
+                    "description": "Test Project summanry",
+                    "skills": {
+                        "os": "Window, Linux",
+                        "db": "SQL, MySQL",
+                        "lang": "Java, Kotlin, Flutter",
+                        "tool": "Android Studio"
+                    },
+                    "responsible": {
+                        "analysis": "on",
+                        "definition": "on",
+                        "exterior_design": "on",
+                        "internal_design": "on",
+                        "unit_test": "on",
+                        "integration_test": "on"
+                    },
+                    "memo": "TEST TEST TEST TEST"
+                },
+                {
+                    "id": "128",
+                    "start_time": {
+                        "year": "2016",
+                        "month": "1"
+                    },
+                    "participating": "on",
+                    "end_time": {
+                        "year": "2024",
+                        "month": "3"
+                    },
+                    "period_time": 98,
+                    "position": "Manager",
+                    "team_size": 3,
+                    "company_size": 10,
+                    "description": "Test Project summanry 12312313",
+                    "skills": {
+                        "os": "window, hackathon",
+                        "db": "aaaa, bbb",
+                        "lang": "dddd, eeeee",
+                        "tool": "fffff"
+                    },
+                    "responsible": {
+                        "analysis": "on",
+                        "definition": "on",
+                        "exterior_design": "on",
+                        "internal_design": "on",
+                        "development_manufacturing": "on",
+                        "unit_test": "on",
+                        "integration_test": "on",
+                        "general_test": "on",
+                        "environmental_design": "on",
+                        "environmental_construction": "on",
+                        "operational_design": "on",
+                        "operation_maintenance": "on",
+                        "other": "on"
+                    },
+                    "memo": "ABCAKJHASHADKJHAKDHAKSDHAKSJHDAJSHDKAJHD"
+                }
+            ]
+        }
+  '''
+}
+
+settings {
+  encodeUrl: true
+}

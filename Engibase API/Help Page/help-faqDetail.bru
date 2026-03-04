@@ -1,0 +1,28 @@
+meta {
+  name: help/faqDetail
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{url-v2}}/help/faq-detail?id=107
+  body: none
+  auth: inherit
+}
+
+params:query {
+  id: 107
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

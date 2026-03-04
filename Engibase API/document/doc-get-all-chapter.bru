@@ -1,0 +1,28 @@
+meta {
+  name: doc/get-all-chapter
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{url}}/doc/get-all-chapter?doc_id=4
+  body: none
+  auth: inherit
+}
+
+params:query {
+  doc_id: 4
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

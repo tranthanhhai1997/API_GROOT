@@ -1,0 +1,25 @@
+meta {
+  name: Ai Api Configs
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url}}/system/ai-api-configs
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~type: MAIL_ANALYZER
+  ~status: 0
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+settings {
+  encodeUrl: true
+}

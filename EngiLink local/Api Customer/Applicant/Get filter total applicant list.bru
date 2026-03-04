@@ -1,0 +1,36 @@
+meta {
+  name: Get filter total applicant list
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url}}/applicants/filter-total-list?channel=43
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  channel: 43
+  ~name: Hải
+  ~applied_date[0]: 2024/10/26
+  ~applied_date[1]: 2025/12/01
+  ~referral_company: soft
+  ~job_title[]: エンジニア
+  ~selection_process: 4
+  ~selection_step: 14
+  ~recruiment_status: 1
+  ~user_id: 102
+  ~code: USR002
+  ~job_title[]: 33
+  ~job_title[]: 34
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+settings {
+  encodeUrl: true
+}

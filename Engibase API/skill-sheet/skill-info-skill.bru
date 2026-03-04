@@ -1,0 +1,28 @@
+meta {
+  name: /skill/info-skill
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url-v2}}/skill/info-skill
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~: 
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  Jil-Token: {{token}}
+  device-id: {{device-id}}
+}
+
+settings {
+  encodeUrl: true
+}

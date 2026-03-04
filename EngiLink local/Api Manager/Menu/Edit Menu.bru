@@ -1,0 +1,41 @@
+meta {
+  name: Edit Menu
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{url-manager}}/menu/edit
+  body: json
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil-token: {{Jil_Token}}
+}
+
+body:json {
+  {
+    "id": "122",
+    "type": "menu",
+  //   "name": "test",
+    "order": 32,
+    "parent": "",
+    "title": "Test",
+  //   "path": "/test",
+    "authCode": "",
+    "component": "/error/404",
+    "icon": "carbon:add-large",
+    "status": 1,
+    "hideInMenu": false,
+    "affixTab": false,
+    "hideChildrenInMenu": false,
+    "showFilterBar": "false",
+    "noBasicLayout": false
+  }
+}
+
+settings {
+  encodeUrl: true
+}

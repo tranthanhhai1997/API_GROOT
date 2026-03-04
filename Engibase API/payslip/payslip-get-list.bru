@@ -1,0 +1,31 @@
+meta {
+  name: payslip/get-list
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url-v2}}/payslip/get-list?type=BONUS&time=2025-12-01
+  body: formUrlEncoded
+  auth: inherit
+}
+
+params:query {
+  type: BONUS
+  time: 2025-12-01
+  ~limit: 10
+  ~page: 1
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  jil-token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

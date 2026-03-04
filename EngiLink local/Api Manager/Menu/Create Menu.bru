@@ -1,0 +1,40 @@
+meta {
+  name: Create Menu
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{url-manager}}/menu/create
+  body: json
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: com.learningift.engilink
+  Jil_Token: {{Jil_Token}}
+}
+
+body:json {
+  {
+    "type": "menu",
+    "name": "test1",
+    "parent": "",
+    "order": "",
+    "title": "Test1",
+    "path": "/test1",
+    "authCode": "",
+    "component": "/error/404",
+    "icon": "mdi:view-dashboard",
+    "status": 1,
+    "hideInMenu": false,
+    "affixTab": false,
+    "hideChildrenInMenu": false,
+    "showFilterBar": "false",
+    "noBasicLayout": false
+  }
+}
+
+settings {
+  encodeUrl: true
+}

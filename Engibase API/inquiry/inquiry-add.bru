@@ -1,0 +1,31 @@
+meta {
+  name: inquiry/add
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{url-v2}}/inquiry/add
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  version: {{version}}
+  jil-token: {{token}}
+  ~Content-Type: {{Content-Type}}
+  ~App-Version: {{App-Version}}
+  ~device-id: {{device-id}}
+}
+
+body:multipart-form {
+  title: test
+  content: test
+  faq_cate: 293
+  attachment: @file(/Users/mac/Downloads/1j9mkzm1tu70i2hlCHCHOxp7r3aL_ho9kyGnh8GyB.png)
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,24 @@
+meta {
+  name: help/main
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url-v2}}/help/main
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version-v2}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

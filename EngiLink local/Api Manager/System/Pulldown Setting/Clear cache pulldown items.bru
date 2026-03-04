@@ -1,0 +1,20 @@
+meta {
+  name: Clear cache pulldown items
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{url}}/pulldown/clear-cache
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  id: 1
+  order: 5
+}
+
+settings {
+  encodeUrl: true
+}

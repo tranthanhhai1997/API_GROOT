@@ -1,0 +1,24 @@
+meta {
+  name: /category/get-special-note
+  type: http
+  seq: 22
+}
+
+get {
+  url: {{url}}/category/get-special-note
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  Jil-Token: {{token}}
+  device-id: {{device-id}}
+}
+
+settings {
+  encodeUrl: true
+}

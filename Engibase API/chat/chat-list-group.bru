@@ -1,0 +1,24 @@
+meta {
+  name: chat/list-group
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{url}}/chat/list-group
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: r8279ntlfq0sbs4bdb0srtcu23
+}
+
+settings {
+  encodeUrl: true
+}

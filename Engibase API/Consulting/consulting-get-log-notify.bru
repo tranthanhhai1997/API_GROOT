@@ -1,0 +1,24 @@
+meta {
+  name: consulting/get-log-notify
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{url}}/consulting/get-log-notify
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

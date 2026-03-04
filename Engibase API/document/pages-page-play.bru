@@ -1,0 +1,28 @@
+meta {
+  name: /pages/page/play
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{url}}/pages/page/play?page_id=7
+  body: none
+  auth: inherit
+}
+
+params:query {
+  page_id: 7
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}
