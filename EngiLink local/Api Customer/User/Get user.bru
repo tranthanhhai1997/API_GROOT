@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{url}}/user/list
+  url: {{url-visitor}}/user/list
   body: none
   auth: inherit
 }
@@ -21,4 +21,5 @@ headers {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
