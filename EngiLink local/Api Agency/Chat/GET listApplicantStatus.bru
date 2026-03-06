@@ -1,0 +1,39 @@
+meta {
+  name: GET listApplicantStatus
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{url}}/chat/list-applicant-status?recruitment_status=0&only_send_error=0&within3days=0
+  body: none
+  auth: inherit
+}
+
+params:query {
+  recruitment_status: 0
+  only_send_error: 0
+  within3days: 0
+  ~name: linh
+  ~code: USR003
+  ~selection_process: 3
+  ~selection_step: 13
+  ~phone: 091
+  ~email: linh.pham.alt@email.com
+  ~job_title: エンジニア
+  ~latest_subject: 書類
+  ~startDate: 2024/10/22
+  ~endDate: 2024/10/24
+  ~user_id: 102
+  ~channel: 43
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

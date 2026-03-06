@@ -1,0 +1,29 @@
+meta {
+  name: Edit template
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{url}}/template/edit
+  body: json
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+body:json {
+  {
+      "id": 14,
+      "title": "hello",
+      "content": "hello"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

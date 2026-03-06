@@ -1,22 +1,25 @@
 meta {
-  name: Get job detail
+  name: Change user status
   type: http
-  seq: 3
+  seq: 8
 }
 
-get {
-  url: {{url-visitor}}/jobs/detail?id=12
-  body: multipartForm
+put {
+  url: {{url}}/user/change-status
+  body: json
   auth: inherit
-}
-
-params:query {
-  id: 12
 }
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
   Jil_Token: {{Jil_Token}}
+}
+
+body:json {
+  {
+      "id": "5",
+      "status": "0"
+  }
 }
 
 settings {

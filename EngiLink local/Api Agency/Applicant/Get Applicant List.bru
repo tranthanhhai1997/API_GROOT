@@ -1,0 +1,35 @@
+meta {
+  name: Get Applicant List
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url}}/applicants?job_title=営業職&channel[]
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  job_title: 営業職
+  channel[]: 
+  ~name: linh
+  ~code: USR003
+  ~applied_date[0]: 2024/10/26
+  ~applied_date[1]: 2025/12/01
+  ~channel: 43
+  ~referral_company: FPT Software
+  ~selection_process: 3
+  ~selection_step: 13
+  ~recruiment_status: 1
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

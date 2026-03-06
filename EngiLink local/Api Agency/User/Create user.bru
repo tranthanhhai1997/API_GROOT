@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: {{url}}/user/create
+  url: {{url-visitor}}/user/create
   body: multipartForm
   auth: inherit
 }
@@ -16,7 +16,7 @@ headers {
 }
 
 body:multipart-form {
-  file: @file(/C:/Users/Tan Lam/Downloads/test.jpg)
+  file: @file(C:\Users\Tan Lam\Downloads\download (1).jpg)
   name: Lâm
   katakanaName: Lâm
   phoneNumber: 0901234765
@@ -28,4 +28,5 @@ body:multipart-form {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

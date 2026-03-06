@@ -1,0 +1,28 @@
+meta {
+  name: Change status customer menu
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{url}}/menu/change-status
+  body: json
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil-token: {{Jil_Token}}
+}
+
+body:json {
+  {
+      "id": 101,
+      "status": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

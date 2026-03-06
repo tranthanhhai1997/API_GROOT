@@ -1,0 +1,78 @@
+meta {
+  name: Create a new job
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{url-visitor}}/jobs/create
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+body:multipart-form {
+  publish_start_date: 1772681027
+  publish_end_date: 1773977027
+  is_private: 1
+  agency_visibility: 2
+  agency_group_id: 1
+  show_application_form: 1
+  management_name: Test_2
+  title_management: test_2
+  title_display: Test_2
+  company_id: 1
+  selection_flow_id: 1
+  assigned_user_id: 1
+  employment_type_id: 1
+  job_type_main_id: 1
+  job_type_sub_id: 2
+  assigned_dept_id: 1
+  department: Dev
+  job_description: Testtt
+  selection_method: Testtt
+  manager_comment: Okie
+  agency_notes: Good
+  work_area_id: 1
+  postal_code: 123
+  prefecture_id: 1
+  city: Quận 1
+  address_detail: 123/12
+  work_location_note: Quận 2
+  work_style_id: 2
+  work_hours: 8 hours
+  overtime_info: 2 hours
+  salary_type: 1
+  salary_min: 200000
+  salary_max: 400000
+  has_fixed_overtime: 1
+  fixed_overtime_hours: 1
+  fixed_overtime_pay: 30000
+  has_probation: 1
+  salary_notes: Low salary
+  required_experience: 7 years
+  required_qualifications: University
+  education_requirement: Test
+  age_requirement: 30
+  holidays_vacations: 30/4 - 1/5
+  social_insurance: full
+  other_benefits: bonus salary
+  job_type_tab_id: 2
+  job_type_group_id: 4
+  display_order: 5
+  entry_form_id: 1
+  entry_complete_mail_id: 1
+  top_image: @file(C:\Users\Tan Lam\Downloads\image.png)
+  youtube_url: https//test.com
+  app_form_id: 1
+  app_complete_mail_id: 1
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

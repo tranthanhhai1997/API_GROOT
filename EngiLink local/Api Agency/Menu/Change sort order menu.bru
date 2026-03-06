@@ -1,0 +1,28 @@
+meta {
+  name: Change sort order menu
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{url-manager}}/menu/sort-order
+  body: json
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+body:json {
+  {
+      "id": 123,
+      "order": 29
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

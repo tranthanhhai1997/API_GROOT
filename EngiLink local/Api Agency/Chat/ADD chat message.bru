@@ -1,0 +1,30 @@
+meta {
+  name: ADD chat message
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{url}}/chat/add-messages
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil-Token: {{token}}
+}
+
+body:multipart-form {
+  template_id: 11
+  content: Hai dep zai 123456
+  asl_id: 3
+  title: test
+  ~attachments[]: @file(/C:/Users/Groot/Pictures/1140073.jpg)
+  ~attachments[]: @file(/C:/Users/Groot/Pictures/a.pdf)
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

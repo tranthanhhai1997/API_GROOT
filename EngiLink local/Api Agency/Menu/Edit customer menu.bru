@@ -1,0 +1,21 @@
+meta {
+  name: Edit customer menu
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{url}}/menu/edit
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil-Token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

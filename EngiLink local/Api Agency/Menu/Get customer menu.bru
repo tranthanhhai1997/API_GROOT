@@ -1,0 +1,26 @@
+meta {
+  name: Get customer menu
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url}}/menu?all=1&status=0
+  body: none
+  auth: inherit
+}
+
+params:query {
+  all: 1
+  status: 0
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

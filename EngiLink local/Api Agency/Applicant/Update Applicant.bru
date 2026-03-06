@@ -1,0 +1,28 @@
+meta {
+  name: Update Applicant
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{url}}/applicants/update
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+body:multipart-form {
+  id: 1
+  full_name: しゅうへい1
+  applied_date: 1763435526
+  hr_notes: ffff
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

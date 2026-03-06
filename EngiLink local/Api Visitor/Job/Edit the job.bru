@@ -1,11 +1,11 @@
 meta {
-  name: Create a new job
+  name: Edit the job
   type: http
-  seq: 2
+  seq: 4
 }
 
 post {
-  url: {{url-visitor}}/jobs/create
+  url: {{url-visitor}}/jobs/edit
   body: multipartForm
   auth: inherit
 }
@@ -16,16 +16,17 @@ headers {
 }
 
 body:multipart-form {
+  id: 16
   publish_start_date: 1772681027
   publish_end_date: 1773977027
   is_private: 1
   agency_visibility: 2
   agency_group_id: 1
   show_application_form: 1
-  management_name: Test_2
-  title_management: test_2
-  title_display: Test_2
-  company_id: 1
+  management_name: Test
+  title_management: test_1
+  title_display: Test_1
+  company_id: 3
   selection_flow_id: 1
   assigned_user_id: 1
   employment_type_id: 1
@@ -33,9 +34,9 @@ body:multipart-form {
   job_type_sub_id: 2
   assigned_dept_id: 1
   department: Dev
-  job_description: Testtt
+  job_description: Test
   selection_method: Testtt
-  manager_comment: Okie
+  manager_comment: Very good
   agency_notes: Good
   work_area_id: 1
   postal_code: 123
@@ -43,11 +44,11 @@ body:multipart-form {
   city: Quận 1
   address_detail: 123/12
   work_location_note: Quận 2
-  work_style_id: 2
+  work_style_id: fulltime
   work_hours: 8 hours
-  overtime_info: 2 hours
+  overtime_info: 5 hours
   salary_type: 1
-  salary_min: 200000
+  salary_min: 300000
   salary_max: 400000
   has_fixed_overtime: 1
   fixed_overtime_hours: 1
@@ -66,7 +67,7 @@ body:multipart-form {
   display_order: 5
   entry_form_id: 1
   entry_complete_mail_id: 1
-  top_image_url: https//test.com
+  top_image: https//assd.com
   youtube_url: https//test.com
   app_form_id: 1
   app_complete_mail_id: 1

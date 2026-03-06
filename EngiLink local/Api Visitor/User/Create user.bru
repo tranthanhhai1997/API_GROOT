@@ -1,0 +1,32 @@
+meta {
+  name: Create user
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{url-visitor}}/user/create
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+body:multipart-form {
+  file: @file(C:\Users\Tan Lam\Downloads\download (1).jpg)
+  name: Lâm
+  katakanaName: Lâm
+  phoneNumber: 0901234765
+  email: nev062@example.com
+  password: abc123456
+  confirmPassword: abc123456
+  status: 1
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

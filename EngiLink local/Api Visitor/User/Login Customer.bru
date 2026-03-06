@@ -1,0 +1,25 @@
+meta {
+  name: Login Customer
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{url-visitor}}/login
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: com.learningift.engilink
+}
+
+body:multipart-form {
+  data: eyJhbGciOiJIUzUxMiJ9.eyJlbWFpbCI6Im5lc3YwNjFAZ21haWwuY29tIiwicGFzc3dvcmQiOiJhYmMxMjM0NTYiLCJtZDUiOiJhM2Y1N2JiZTIxYzRlMzAzNzkyMjhhZDc3ODhmMjI0ZCIsImV4cCI6MTk1ODI2NjExNX0.2FqUrv6N3lEgsdD47t-0jjJ9LUD4KuPfAPLBU0qQGaumst6oB2vVSVrVOBiZfiF4Hgpk3htxSWdjqRPgXxqGXQ
+  ~: 
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

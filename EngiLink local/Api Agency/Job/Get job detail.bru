@@ -1,0 +1,25 @@
+meta {
+  name: Get job detail
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url-visitor}}/jobs/detail?id=16
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  id: 16
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Get pulldown categories
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url}}/pulldown/categories
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

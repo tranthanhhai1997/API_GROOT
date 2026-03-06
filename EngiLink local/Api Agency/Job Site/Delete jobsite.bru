@@ -1,0 +1,27 @@
+meta {
+  name: Delete jobsite
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{url}}/jobsite/delete
+  body: json
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+body:json {
+  {
+      "ids": 11
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
