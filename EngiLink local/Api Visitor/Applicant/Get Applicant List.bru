@@ -5,14 +5,14 @@ meta {
 }
 
 get {
-  url: {{url}}/applicants?job_title=営業職&channel[]
+  url: {{url-visitor}}/applicants
   body: multipartForm
   auth: inherit
 }
 
 params:query {
-  job_title: 営業職
-  channel[]: 
+  ~job_title: 営業職
+  ~channel[]: 
   ~name: linh
   ~code: USR003
   ~applied_date[0]: 2024/10/26
@@ -31,4 +31,5 @@ headers {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
