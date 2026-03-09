@@ -1,0 +1,22 @@
+meta {
+  name: reImportAgencyEs
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{url-manager}}/system/reImportAgencyEs
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

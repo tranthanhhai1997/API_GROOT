@@ -1,0 +1,33 @@
+meta {
+  name: user/login
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{url}}/user/login
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  ~debug: 1
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Content-Type: {{Content-Type}}
+  version: {{version}}
+  App-Version: {{App-Version}}
+  device-id: {{device-id}}
+  Jil-Token: {{token}}
+}
+
+body:multipart-form {
+  data: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJuZXN2MDA1QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiYWJjMTIzNDU2IiwiZXhwIjoxNzczMTE3NDMyLCJhdXRoX3Rva2VuIjoiY2ZWcjJ0X1ZUcGVkdmRuT1J0XzU5NzpBUEE5MWJIcjR6cWR6NnBlME5LN2R2YVUyT2hmSEtXa2t0QW5pU2NZMTVYdk1ZVnVsNHJ1ZFZmcGt6YzZQUnc2NWtzQUdsZGNwUDVKd2d1bmM4bzhuMlJpcFJINnpENnhBWktsZ2tPeVRqemRUaXFrT3lfYWpEVSJ9.fMf0e2fB5KswpVNLv6IXejjtFfm5b0t3Y2TIkLn3bnIPi6ObAhcEqm2n4BCOSAG_jpbpEDiweiW__qbYTATEpQ
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
