@@ -1,0 +1,25 @@
+meta {
+  name: ExportJobsPdf
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{url-agency}}/jobs/export-jobs-pdf
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token-Visitor}}
+}
+
+body:multipart-form {
+  ids[]: 16
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
