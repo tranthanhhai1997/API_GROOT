@@ -1,0 +1,23 @@
+meta {
+  name: Get filter total list
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{url-visitor}}/jobs/filter-total-list?code&title=test&work_area_id=25&publish_status=private
+  body: none
+  auth: inherit
+}
+
+params:query {
+  code: 
+  title: test
+  work_area_id: 25
+  publish_status: private
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
