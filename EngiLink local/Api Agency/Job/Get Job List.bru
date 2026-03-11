@@ -5,14 +5,19 @@ meta {
 }
 
 get {
-  url: {{url-agency}}/jobs/list
+  url: {{url-agency}}/jobs/list?title=test_2
   body: none
   auth: inherit
+}
+
+params:query {
+  title: test_2
 }
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
   Jil_Token: {{Jil_Token-Agency}}
+  version: {{version}}
 }
 
 settings {
