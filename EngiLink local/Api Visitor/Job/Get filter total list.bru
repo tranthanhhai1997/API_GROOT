@@ -5,16 +5,22 @@ meta {
 }
 
 get {
-  url: {{url-visitor}}/jobs/filter-total-list?code&title=test&work_area_id=25&publish_status=private
+  url: {{url-visitor}}/jobs/filter-total-list?work_area_id[]=28
   body: none
   auth: inherit
 }
 
 params:query {
-  code: 
-  title: test
-  work_area_id: 25
-  publish_status: private
+  work_area_id[]: 28
+  ~title: Test_1
+  ~code: 
+  ~publish_status: private
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token-Visitor: {{Jil_Token-Visitor}}
+  version: {{version}}
 }
 
 settings {

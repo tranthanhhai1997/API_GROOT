@@ -5,14 +5,21 @@ meta {
 }
 
 get {
-  url: {{url-visitor}}/jobs/list
+  url: {{url-visitor}}/jobs/list?title=test_1
   body: none
   auth: inherit
+}
+
+params:query {
+  title: test_1
+  ~work_area_id[]: 28
+  ~code: 
 }
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
   Jil_Token: {{Jil_Token-Visitor}}
+  version: {{version}}
 }
 
 settings {
