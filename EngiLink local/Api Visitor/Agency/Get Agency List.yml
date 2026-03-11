@@ -1,0 +1,22 @@
+info:
+  name: Get Agency List
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url}}/agency"
+  headers:
+    - name: Jil-Public-Key
+      value: "{{Jil-Public-Key}}"
+    - name: Jil_Token
+      value: "{{Jil_Token}}"
+  body:
+    type: multipart-form
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

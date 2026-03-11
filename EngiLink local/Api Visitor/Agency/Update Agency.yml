@@ -1,0 +1,43 @@
+info:
+  name: Update Agency
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{url}}/agency/update"
+  headers:
+    - name: Jil-Public-Key
+      value: "{{Jil-Public-Key}}"
+    - name: Jil_Token
+      value: "{{Jil_Token}}"
+  body:
+    type: multipart-form
+    data:
+      - name: id
+        type: text
+        value: "10"
+        description: require
+      - name: corporateName
+        type: text
+        value: ' "Công ty TNHH ABC Việt Nam",'
+        description: require
+      - name: displayName
+        type: text
+        value: ' "ABC Agency abc",'
+      - name: phoneNumber
+        type: text
+        value: ' "0912345678",'
+      - name: classification
+        type: text
+        value: ' "specialized",'
+      - name: status
+        type: text
+        value: " false"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
