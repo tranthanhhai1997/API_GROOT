@@ -1,22 +1,23 @@
 meta {
-  name: Get Job List
+  name: Get Job data
   type: http
-  seq: 1
+  seq: 5
 }
 
 get {
-  url: {{url-visitor}}/jobs/list
+  url: {{url-agency}}/jobs/get-job-by-id?ids[]=20&ids[]=35
   body: none
   auth: inherit
 }
 
 params:query {
-  ~title: test_1
+  ids[]: 20
+  ids[]: 35
 }
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
-  Jil_Token: {{Jil_Token-Visitor}}
+  Jil_Token: {{Jil_Token-Agency}}
   version: {{version}}
 }
 

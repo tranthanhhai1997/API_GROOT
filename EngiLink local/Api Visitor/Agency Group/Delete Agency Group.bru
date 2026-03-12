@@ -1,0 +1,27 @@
+meta {
+  name: Delete Agency Group
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{url-visitor}}/agency-group/delete
+  body: json
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token-Visitor: {{Jil_Token-Visitor}}
+}
+
+body:json {
+  {
+    "id": 32
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

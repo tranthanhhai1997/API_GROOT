@@ -1,11 +1,11 @@
 meta {
-  name: Create agency group
+  name: Edit Agency Group
   type: http
-  seq: 3
+  seq: 6
 }
 
 post {
-  url: {{url-visitor}}/agency-group/create
+  url: {{url-visitor}}/agency-group/edit
   body: multipartForm
   auth: inherit
 }
@@ -16,11 +16,13 @@ headers {
 }
 
 body:multipart-form {
-  group_name: Test22
-  order: 
-  note: test
-  agency_id[]: 3
-  agency_id[]: 4
+  id: 33
+  group_name: Test
+  order: 3
+  note: Test_1
+  agency_id[]: 5
+  agency_id[]: 1
+  agency_id[]: 7
 }
 
 settings {
