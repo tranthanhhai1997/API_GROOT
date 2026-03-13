@@ -1,0 +1,26 @@
+meta {
+  name: importApplicantFromEsToDb
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{url-manager}}/system/importApplicantFromEsToDb
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~dry_run: 0
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

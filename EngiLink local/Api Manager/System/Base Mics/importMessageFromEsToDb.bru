@@ -1,0 +1,26 @@
+meta {
+  name: importMessageFromEsToDb
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{url-manager}}/system/importMessageFromEsToDb
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~dry_run: 1
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
