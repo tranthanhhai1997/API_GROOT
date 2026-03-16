@@ -1,0 +1,24 @@
+meta {
+  name: Get Agency List
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url-visitor}}/agency
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

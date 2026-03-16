@@ -1,0 +1,32 @@
+meta {
+  name: Agency Delete
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{url-visitor}}/agency/delete
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  ~id: 5
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
+}
+
+body:multipart-form {
+  id: 5
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

@@ -1,0 +1,28 @@
+meta {
+  name: Download Basic info Pdf
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{url-visitor}}/applicants/download-basic-info-pdf?id=1
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  id: 1
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}
