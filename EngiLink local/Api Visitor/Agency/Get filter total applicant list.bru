@@ -5,15 +5,15 @@ meta {
 }
 
 get {
-  url: {{url-visitor}}/agency/filter-total-list?code=123
+  url: {{url-visitor}}/agency/filter-total-list?code=ff&corporate_name=fpt
   body: multipartForm
   auth: inherit
 }
 
 params:query {
-  code: 123
+  code: ff
+  corporate_name: fpt
   ~id: 1
-  ~corporateName: 
   ~status: 0
   ~category: 
 }

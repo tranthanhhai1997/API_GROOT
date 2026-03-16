@@ -5,9 +5,20 @@ meta {
 }
 
 get {
-  url: {{url-visitor}}/agency
+  url: {{url-visitor}}/agency?status=1
   body: multipartForm
   auth: inherit
+}
+
+params:query {
+  status: 1
+  ~code: ffggde
+  ~corporate_name: ty
+  ~display_name: HCL
+  ~phone_number: 091
+  ~email: agency
+  ~address: Quận
+  ~category: general
 }
 
 headers {
