@@ -1,18 +1,17 @@
 meta {
   name: Get Applicant Detail
   type: http
-  seq: 3
+  seq: 2
 }
 
 get {
-  url: {{url}}/applicants/detail?id=3
+  url: {{url-agency}}/applicants/detail?id=1549
   body: multipartForm
   auth: inherit
 }
 
 params:query {
-  id: 3
-  ~interviewFlow: 8
+  id: 1549
 }
 
 headers {

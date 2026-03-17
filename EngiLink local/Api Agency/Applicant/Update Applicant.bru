@@ -1,25 +1,39 @@
 meta {
-  name: Update Applicant
+  name: Update applicant
   type: http
-  seq: 8
+  seq: 4
 }
 
 post {
-  url: {{url}}/applicants/update
+  url: {{url-agency}}/applicants/update
   body: multipartForm
   auth: inherit
 }
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
-  Jil_Token: {{Jil_Token}}
+  Jil_Token-Agency: {{Jil_Token-Agency}}
+  version: {{version}}
 }
 
 body:multipart-form {
-  id: 1
-  full_name: しゅうへい1
-  applied_date: 1763435526
-  hr_notes: ffff
+  id: 1574
+  full_name: Test test lam
+  full_name_furigana: Test Lam
+  gender: 男性
+  birth_date: 1750046182
+  employment_status: 3
+  work_history_detail: testasdaaaaaaa
+  contact_memo: testasdaaaaaaa
+  desired_annual_income: 2000
+  desired_job_change_timing: 3か月以内
+  postal_code: 71000
+  address_detail: Testkk ward, testkk district
+  phone_1: 0123456982
+  email_1: agency_test@gmail.com
+  nearest_station: Test station
+  commute_transportation: バス
+  cv_file_url: 
 }
 
 settings {

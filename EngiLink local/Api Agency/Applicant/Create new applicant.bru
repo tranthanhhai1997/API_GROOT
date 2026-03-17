@@ -1,0 +1,44 @@
+meta {
+  name: Create new applicant
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{url-agency}}/applicants/create
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token-Agency: {{Jil_Token-Agency}}
+  version: {{version}}
+}
+
+body:multipart-form {
+  cv_file_url: 
+  full_name: Lam test TEST
+  full_name_furigana: Lam test
+  gender: 男性
+  birth_date: 1747367782
+  employment_status: 2
+  work_history_detail: Testalskdjas
+  contact_memo: Testalskdjas
+  desired_annual_income: 2000
+  desired_job_change_timing: 1
+  postal_code: 76000
+  address_detail: Test aaa ward, test aaa district
+  phone_1: 0123456612
+  email_1: agency_test_1@gmail.com
+  nearest_station: Thảo Điền station
+  commute_transportation: 電車
+  job_id[]: 99
+  job_id[]: 98
+  job_id[]: 96
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
