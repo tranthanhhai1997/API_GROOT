@@ -1,25 +1,32 @@
 meta {
-  name: Reset PassWord Customer
+  name: Agency Delete
   type: http
-  seq: 3
+  seq: 4
 }
 
 post {
-  url: {{url-visitor}}/user/reset-password
+  url: {{url-visitor}}/agency/delete
   body: multipartForm
   auth: inherit
 }
 
+params:query {
+  ~id: 5
+}
+
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
   version: {{version}}
 }
 
 body:multipart-form {
-  email: nesv039@gmail.com
+  id: 5
 }
 
 settings {
   encodeUrl: true
   timeout: 0
+  followRedirects: true
+  maxRedirects: 5
 }

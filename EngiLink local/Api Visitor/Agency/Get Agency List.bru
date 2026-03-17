@@ -1,0 +1,35 @@
+meta {
+  name: Get Agency List
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url-visitor}}/agency?status=1
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  status: 1
+  ~code: ffggde
+  ~corporate_name: ty
+  ~display_name: HCL
+  ~phone_number: 091
+  ~email: agency
+  ~address: Quận
+  ~category: general
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

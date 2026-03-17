@@ -1,0 +1,32 @@
+meta {
+  name: Get filter total applicant list
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url-visitor}}/agency/filter-total-list?code=ff&corporate_name=fpt
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  code: ff
+  corporate_name: fpt
+  ~id: 1
+  ~status: 0
+  ~category: 
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}
