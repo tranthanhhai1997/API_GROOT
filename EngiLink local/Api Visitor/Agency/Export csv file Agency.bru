@@ -1,12 +1,12 @@
 meta {
-  name: Get Roles
+  name: Export csv file Agency
   type: http
-  seq: 1
+  seq: 9
 }
 
 get {
-  url: {{url-visitor}}/role
-  body: json
+  url: {{url-visitor}}/agency/export-excel
+  body: none
   auth: inherit
 }
 

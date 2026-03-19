@@ -1,18 +1,22 @@
 meta {
-  name: Get Roles
+  name: Create Selection Flow
   type: http
-  seq: 1
+  seq: 4
 }
 
-get {
-  url: {{url-visitor}}/role
-  body: json
+post {
+  url: {{url-manager}}/selection-flows/create
+  body: multipartForm
   auth: inherit
 }
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
   Jil_Token: {{Jil_Token}}
+}
+
+body:multipart-form {
+  order: 
 }
 
 settings {

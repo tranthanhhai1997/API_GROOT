@@ -1,13 +1,17 @@
 meta {
-  name: Get Roles
+  name: Get Selection Flows list
   type: http
   seq: 1
 }
 
 get {
-  url: {{url-visitor}}/role
-  body: json
+  url: {{url-manager}}/selection-flows/list
+  body: none
   auth: inherit
+}
+
+params:query {
+  ~is_shown: 0
 }
 
 headers {
