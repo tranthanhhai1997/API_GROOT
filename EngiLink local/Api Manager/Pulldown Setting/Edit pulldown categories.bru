@@ -5,11 +5,15 @@ meta {
 }
 
 post {
-  url: {{url}}/pulldown/categories/edit
+  url: {{url-manager}}/pulldown/categories/edit
   body: multipartForm
   auth: inherit
 }
-
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
+}
 body:multipart-form {
   id: 1
   name: kkkkkkkk
@@ -19,5 +23,4 @@ body:multipart-form {
 
 settings {
   encodeUrl: true
-  timeout: 0
 }

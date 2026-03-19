@@ -5,11 +5,15 @@ meta {
 }
 
 post {
-  url: {{url}}/pulldown/items/create
+  url: {{url-manager}}/pulldown/items/create
   body: multipartForm
   auth: inherit
 }
-
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
+}
 body:multipart-form {
   category_id: 1
   name: test
@@ -18,5 +22,4 @@ body:multipart-form {
 
 settings {
   encodeUrl: true
-  timeout: 0
 }

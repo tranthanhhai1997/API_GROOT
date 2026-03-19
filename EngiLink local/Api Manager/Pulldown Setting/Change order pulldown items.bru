@@ -5,11 +5,15 @@ meta {
 }
 
 post {
-  url: {{url}}/pulldown/items/sort-order
+  url: {{url-manager}}/pulldown/items/sort-order
   body: multipartForm
   auth: inherit
 }
-
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
+}
 body:multipart-form {
   id: 1
   order: 5

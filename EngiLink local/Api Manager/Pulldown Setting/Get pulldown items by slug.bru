@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{url}}/pulldown/items?slug=Transfer Count&limit=5&name=0
+  url: {{url-manager}}/pulldown/items?slug=Transfer Count&limit=5&name=0
   body: multipartForm
   auth: inherit
 }
@@ -19,8 +19,8 @@ params:query {
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
   Jil_Token: {{Jil_Token}}
+  version: {{version}}
 }
-
 body:multipart-form {
   category_slug: Transfer Count
 }

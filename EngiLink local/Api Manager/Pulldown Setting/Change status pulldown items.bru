@@ -3,9 +3,13 @@ meta {
   type: http
   seq: 8
 }
-
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
+}
 post {
-  url: {{url}}/pulldown/items/change-status
+  url: {{url-manager}}/pulldown/items/change-status
   body: multipartForm
   auth: inherit
 }

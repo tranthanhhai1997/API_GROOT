@@ -9,7 +9,11 @@ delete {
   body: json
   auth: inherit
 }
-
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
+}
 body:json {
   {
       "id": "1"

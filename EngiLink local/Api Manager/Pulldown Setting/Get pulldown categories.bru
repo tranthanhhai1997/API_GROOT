@@ -1,11 +1,11 @@
 meta {
-  name: Get pulldown items
+  name: Get pulldown categories
   type: http
-  seq: 4
+  seq: 1
 }
 
 get {
-  url: {{url}}/pulldown/items/1
+  url: {{url-manager}}/pulldown/categories
   body: none
   auth: inherit
 }
@@ -13,6 +13,7 @@ get {
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
   Jil_Token: {{Jil_Token}}
+  version: {{version}}
 }
 
 settings {
