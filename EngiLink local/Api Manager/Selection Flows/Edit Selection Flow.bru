@@ -1,0 +1,55 @@
+meta {
+  name: Edit Selection Flow
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{url-manager}}/selection-flows/edit
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+body:multipart-form {
+  id: 33
+  order: 7
+  name: Quy trình tuyển dụng JavaScript
+  applicant_flow_name: Quy trình ứng tuyển JavaScript
+  step_name[]: Vòng 2: Interview Technical @contentType(Step 2)
+  applicant_step_name[]: Phỏng vấn kỹ thuật online
+  status_for_applicant[]: 1
+  selection_type[]: 2
+  is_complete[]: 0
+  evaluation_name[1][]: Cần bổ sung thêm kinh nghiệm @contentType(Đánh giá 1 của step 2)
+  judgement_type[1][]: 1
+  evaluation_name[1][]: Không đạt yêu cầu kỹ thuật @contentType(Đánh giá 2 của step 2)
+  judgement_type[1][]: 3
+  step_id[]: 62
+  evaluation_id[1][]: 184
+  evaluation_id[1][]: 185
+  ~step_name[]: Vòng 1: HR interview (Phone call) @contentType(Step 1)
+  ~applicant_step_name[]: Phỏng vấn qua điện thoại
+  ~status_for_applicant[]: 1
+  ~selection_type[]: 1
+  ~is_complete[]: 0
+  ~evaluation_name[0][]: Cần xem xét thêm @contentType(Đánh giá 1 của step 1)
+  ~judgement_type[0][]: 2
+  ~evaluation_name[0][]: Không phù hợp văn hóa @contentType(Đánh giá 2 của step 1)
+  ~judgement_type[0][]: 1
+  ~evaluation_name[0][]: Điểm đạt (>=70đ) @contentType(Đánh giá 3 của step 1)
+  ~judgement_type[0][]: 1
+  ~step_id[]: 61
+  ~evaluation_id[0][]: 182
+  ~evaluation_id[0][]: 183
+  ~evaluation_id[0][]: 186
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

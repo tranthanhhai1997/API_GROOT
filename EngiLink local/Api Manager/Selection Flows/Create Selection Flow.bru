@@ -17,15 +17,26 @@ headers {
 
 body:multipart-form {
   order: 
-  name: 
-  applicant_flow_name: 
-  step_name[]: 
-  step_name[]: 
-  applicant_step_name[]: 
-  evaluation_name[0][]: 
-  evaluation_name[0][]: 
-  evaluation_name[1][]: Kỹ năng tốt
-  step_order: 
+  name: Quy trình tuyển dụng 
+  applicant_flow_name: Quy trình ứng tuyển
+  step_name[]: Vòng 1: HR interview @contentType(Step 1)
+  applicant_step_name[]: Tiếp nhận hồ sơ
+  status_for_applicant[]: 1
+  selection_type[]: 1
+  is_complete[]: 0
+  evaluation_name[0][]: Kinh nghiệm phù hợp @contentType(Đánh giá 1 của step 1)
+  judgement_type[0][]: 2
+  evaluation_name[0][]: Kỹ năng xuất sắc @contentType(Đánh giá 2 của step 1)
+  judgement_type[0][]: 1
+  step_name[]: Vòng 2: Interview Tech @contentType(Step 2)
+  applicant_step_name[]: Phỏng vấn kỹ thuật
+  status_for_applicant[]: 1
+  selection_type[]: 2
+  is_complete[]: 0
+  evaluation_name[1][]: Tư duy logic rất tốt @contentType(Đánh giá 1 của step 2)
+  judgement_type[1][]: 1
+  evaluation_name[1][]: Đạt yêu cầu cơ bản @contentType(Đánh giá 2 của step 2)
+  judgement_type[1][]: 3
 }
 
 settings {
