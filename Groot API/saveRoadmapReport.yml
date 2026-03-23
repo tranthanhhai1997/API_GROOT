@@ -1,0 +1,222 @@
+info:
+  name: saveRoadmapReport
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url-groot}}/user/save-roadmap-report"
+  body:
+    type: json
+    data: |-
+      {
+        "items": {
+          "EngiLink": [
+            {
+              "task_name": "Read structure and got familiar with Frontend project1111",
+              "start_date": "2025/09/09",
+              "end_date": "2025/09/09",
+              "category": "read specification",
+              "est_hour": 4,
+              "actual_hour": 4,
+              "status": "finish",
+              "id": "0936ef51adabf948adee924663cd810f"
+            },
+            {
+              "task_name": "Created Applicant List page",
+              "start_date": "2025/09/09",
+              "end_date": "2025/09/09",
+              "category": "UI",
+              "est_hour": 4,
+              "actual_hour": 4,
+              "status": "finish",
+              "id": "11dda73175bbc20b46ae638933299617"
+            },
+            {
+              "task_name": "Created sample table list info of user in Applicant List page",
+              "start_date": "2025/09/10",
+              "end_date": "2025/09/10",
+              "category": "UI",
+              "est_hour": 2,
+              "actual_hour": 2,
+              "status": "finish",
+              "id": "11dda73175bbc20b46ae638933299617"
+            },
+            {
+              "task_name": "Read Frontend library (Element Plus lib)",
+              "start_date": "2025/09/10",
+              "end_date": "2025/09/10",
+              "category": "read specification",
+              "est_hour": 1,
+              "actual_hour": 1,
+              "status": "finish",
+              "id": "0936ef51adabf948adee924663cd810f"
+            },
+            {
+              "task_name": "Created overlay background to sidebar and sidebar filter",
+              "start_date": "2025/09/10",
+              "end_date": "2025/09/10",
+              "category": "UI",
+              "est_hour": 2,
+              "actual_hour": 2,
+              "status": "finish",
+              "id": "11dda73175bbc20b46ae638933299617"
+            },
+            {
+              "task_name": "Fix css for table list of user in the applicant list page",
+              "start_date": "2025/09/10",
+              "end_date": "2025/09/10",
+              "category": "fix",
+              "est_hour": 1,
+              "actual_hour": 1,
+              "status": "finish",
+              "id": "9562e8e5c1a83830105aee22b330a167"
+            }
+          ],
+          "Engibase": [
+            {
+              "task_name": "Mr Pháp and Mr Hải help me to fix local server with docker for my PC",
+              "start_date": "2025/10/17",
+              "end_date": "2025/10/17",
+              "category": "fix",
+              "est_hour": 4,
+              "actual_hour": 3,
+              "status": "finish",
+              "id": "0a61d828019708f72b4906e0ddb6c6de"
+            },
+            {
+              "task_name": "Read specification and get familiar with source code of Engibase (60%)",
+              "start_date": "2025/10/17",
+              "end_date": "2025/10/17",
+              "category": "read specification",
+              "est_hour": 2,
+              "actual_hour": 3,
+              "status": "finish",
+              "id": "58ada89fd523cfbb665090fa3ce7eb25"
+            },
+            {
+              "task_name": "Fix 607 task (70%)",
+              "start_date": "2025/10/17",
+              "end_date": "2025/10/17",
+              "category": "fix",
+              "est_hour": 2,
+              "actual_hour": 2,
+              "status": "finish",
+              "id": "0a61d828019708f72b4906e0ddb6c6de"
+            },
+            {
+              "task_name": "Continute to fix 607 task (90%)",
+              "start_date": "2025/10/20",
+              "end_date": "2025/10/20",
+              "category": "fix",
+              "est_hour": 3,
+              "actual_hour": 3,
+              "status": "finish",
+              "id": "0a61d828019708f72b4906e0ddb6c6de"
+            },
+            {
+              "task_name": "Continue to read specification and get familiar with source code of Engibase (80%)",
+              "start_date": "2025/10/20",
+              "end_date": "2025/10/20",
+              "category": "read specification",
+              "est_hour": 2,
+              "actual_hour": 2,
+              "status": "finish",
+              "id": "58ada89fd523cfbb665090fa3ce7eb25"
+            },
+            {
+              "task_name": "Implement dailly report page and API",
+              "start_date": "2025/12/10",
+              "end_date": "2025/12/10",
+              "category": "implements",
+              "est_hour": 5,
+              "actual_hour": 5,
+              "status": "finish",
+              "id": "d412a0b6e79e57a34beacf90ee427886"
+            }
+          ],
+          "Rectelework": [
+            {
+              "task_name": "Mr Hai support me to set-up rectelework local server for my PC",
+              "start_date": "2025/10/20",
+              "end_date": "2025/10/20",
+              "category": "implements",
+              "est_hour": 1,
+              "actual_hour": 1,
+              "status": "finish",
+              "id": "57ebbcb2a6b4cba4a9ae0c6212c676c5"
+            }
+          ],
+          "WS_Groot": [
+            {
+              "task_name": "Setup ws_groot project and config docker",
+              "start_date": "2026/01/28",
+              "end_date": "2026/01/28",
+              "category": "implements",
+              "est_hour": 2,
+              "actual_hour": 2,
+              "status": "finish",
+              "id": "7ad9fc8591a1f80ecb86addffb5a8640"
+            },
+            {
+              "task_name": "Add column draft data and approval status to table user time sheet",
+              "start_date": "2026/01/28",
+              "end_date": "2026/01/28",
+              "category": "implements",
+              "est_hour": 1,
+              "actual_hour": 1,
+              "status": "finish",
+              "id": "7ad9fc8591a1f80ecb86addffb5a8640"
+            },
+            {
+              "task_name": "Implement save draft data in edit API",
+              "start_date": "2026/01/28",
+              "end_date": "2026/01/28",
+              "category": "implements",
+              "est_hour": 1,
+              "actual_hour": 1,
+              "status": "finish",
+              "id": "7ad9fc8591a1f80ecb86addffb5a8640"
+            },
+            {
+              "task_name": "Implement approval status API",
+              "start_date": "2026/01/29",
+              "end_date": "2026/01/29",
+              "category": "implements",
+              "est_hour": 2,
+              "actual_hour": 2,
+              "status": "finish",
+              "id": "7ad9fc8591a1f80ecb86addffb5a8640"
+            },
+            {
+              "task_name": "Implement approval status button UI and JS function in user time sheet page",
+              "start_date": "2026/01/29",
+              "end_date": "2026/01/29",
+              "category": "implements",
+              "est_hour": 2,
+              "actual_hour": 2,
+              "status": "finish",
+              "id": "7ad9fc8591a1f80ecb86addffb5a8640"
+            },
+            {
+              "task_name": "Fix edit time sheet API",
+              "start_date": "2026/01/29",
+              "end_date": "2026/01/29",
+              "category": "fix",
+              "est_hour": 2,
+              "actual_hour": 2,
+              "status": "finish",
+              "id": "aad3acd6b3705707b548ca5685d9c607"
+            }
+          ]
+        },
+        "id": "14xbNuIdP3XJy3xstuNg0YGfQmjzbcYZ1wrh98vQ7yQ8",
+        "name": "【Mr Lam】Roadmap 2025/08 ~ 2026/03"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
