@@ -1,0 +1,31 @@
+meta {
+  name: Delete Selection Flow
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{url-manager}}/selection-flows/delete
+  body: json
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+body:json {
+  {
+    "id": 39
+  }
+}
+
+body:multipart-form {
+  id: 33
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

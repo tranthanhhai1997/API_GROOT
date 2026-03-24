@@ -5,13 +5,13 @@ meta {
 }
 
 get {
-  url: {{url}}/applicants/detail?id=3
+  url: {{url-visitor}}/applicants/detail?id=1629
   body: multipartForm
   auth: inherit
 }
 
 params:query {
-  id: 3
+  id: 1629
   ~interviewFlow: 8
 }
 
@@ -22,4 +22,5 @@ headers {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
