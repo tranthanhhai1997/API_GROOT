@@ -1,0 +1,21 @@
+meta {
+  name: Export excel
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{url-manager}}/selection-flows/export-excel
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

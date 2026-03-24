@@ -1,0 +1,25 @@
+meta {
+  name: Get selection flow detail
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{url-manager}}/selection-flows/detail?id=33
+  body: none
+  auth: inherit
+}
+
+params:query {
+  id: 33
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
