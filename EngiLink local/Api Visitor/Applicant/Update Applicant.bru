@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: {{url}}/applicants/update
+  url: {{url-visitor}}/applicants/update
   body: multipartForm
   auth: inherit
 }
@@ -16,12 +16,41 @@ headers {
 }
 
 body:multipart-form {
-  id: 1
-  full_name: しゅうへい1
-  applied_date: 1763435526
-  hr_notes: ffff
+  id: 1629
+  evaluation_result: re_interview
+  next_step_id: 9
+  interviewer_id[]: 152
+  evaluation[]: fail
+  comment[]: Good test
+  common_comment: Good
+  event_category: 1
+  selection_step_id: 8
+  selection_flow_id: 3
+  start_time: 1774410166
+  end_time: 1774410195
+  location_type: 2
+  interview_status: 2
+  selection_status: 4
+  cv_file_url: @file(C:\Users\Tan Lam\Downloads\Applicant_List_20260324_134220.xlsx)
+  first_name: TRI
+  last_name: TESTER
+  first_name_furigana: TRI
+  last_name_furigana: TESTER
+  interviewer_id[]: 140
+  evaluation[]: pass
+  comment[]: Normal
+  ~applied_date: 1763435526
+  ~hr_notes: ffff
+  ~status: 
+  ~email_1: 
+  ~email_2: 
+  ~phone_1: 
+  ~phone_2: 
+  ~interview_flow: 72
+  ~interview_step: 
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

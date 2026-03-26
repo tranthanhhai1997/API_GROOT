@@ -1,0 +1,29 @@
+meta {
+  name: Update Agency Sort
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{url-visitor}}/agency/update-sort
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
+}
+
+body:multipart-form {
+  id: 13
+  order: 1
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}
