@@ -1,22 +1,19 @@
 meta {
-  name: Download Interview Info Pdf
+  name: reImportChatMsgBaseEs
   type: http
-  seq: 6
+  seq: 8
 }
 
 get {
-  url: {{url-visitor}}/applicants/download-interview-info-pdf?id=1
-  body: multipartForm
+  url: {{url-manager}}/system/reImportChatMsgBaseEs
+  body: none
   auth: inherit
-}
-
-params:query {
-  id: 1
 }
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
   Jil_Token: {{Jil_Token}}
+  version: {{version}}
 }
 
 settings {

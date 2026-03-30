@@ -1,17 +1,17 @@
 meta {
-  name: Download Basic info Pdf
+  name: testFetchMail
   type: http
-  seq: 5
+  seq: 7
 }
 
 get {
-  url: {{url-visitor}}/applicants/download-basic-info-pdf?id=1
-  body: multipartForm
+  url: {{url-manager}}/system/testFetchMail?limit=50
+  body: none
   auth: inherit
 }
 
 params:query {
-  id: 1
+  limit: 50
 }
 
 headers {
@@ -23,6 +23,4 @@ headers {
 settings {
   encodeUrl: true
   timeout: 0
-  followRedirects: true
-  maxRedirects: 5
 }

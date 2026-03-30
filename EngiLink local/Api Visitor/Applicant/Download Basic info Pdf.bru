@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{url}}/applicants/download-basic-info-pdf?id=1
+  url: {{url-visitor}}/applicants/download-basic-info-pdf?id=1
   body: multipartForm
   auth: inherit
 }
@@ -21,4 +21,5 @@ headers {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

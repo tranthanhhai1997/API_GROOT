@@ -5,16 +5,16 @@ meta {
 }
 
 get {
-  url: {{url-visitor}}/applicants
+  url: {{url-visitor}}/applicants?code=jp7bP7Z1Psfke1cK
   body: multipartForm
   auth: inherit
 }
 
 params:query {
+  code: jp7bP7Z1Psfke1cK
   ~job_title: 営業職
   ~channel[]: 
   ~name: linh
-  ~code: USR003
   ~applied_date[0]: 2024/10/26
   ~applied_date[1]: 2025/12/01
   ~channel: 43
@@ -27,6 +27,7 @@ params:query {
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
   Jil_Token: {{Jil_Token-Visitor}}
+  version: {{version}}
 }
 
 settings {

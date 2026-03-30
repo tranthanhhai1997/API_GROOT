@@ -1,17 +1,13 @@
 meta {
-  name: Download Interview Info Pdf
+  name: exportExcel
   type: http
-  seq: 6
+  seq: 7
 }
 
 get {
-  url: {{url-visitor}}/applicants/download-interview-info-pdf?id=1
+  url: {{url-visitor}}/agency/export-excel
   body: multipartForm
   auth: inherit
-}
-
-params:query {
-  id: 1
 }
 
 headers {

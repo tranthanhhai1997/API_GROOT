@@ -1,26 +1,24 @@
 meta {
-  name: ExportJobsPdf
+  name: updateSort
   type: http
-  seq: 3
+  seq: 8
 }
 
 post {
-  url: {{url-agency}}/jobs/export-jobs-pdf
+  url: {{url-visitor}}/agency/update-sort
   body: multipartForm
   auth: inherit
 }
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
-  Jil_Token: {{Jil_Token-Visitor}}
-}
-
-body:multipart-form {
-  ids[]: 16
-  ids[]: 17
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
 }
 
 settings {
   encodeUrl: true
   timeout: 0
+  followRedirects: true
+  maxRedirects: 5
 }
