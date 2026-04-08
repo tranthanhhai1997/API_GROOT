@@ -5,15 +5,15 @@ meta {
 }
 
 get {
-  url: {{url}}/chat/list-applicant-status?recruitment_status=0&only_send_error=0&within3days=0
+  url: {{url-visitor}}/chat/list-applicant-status
   body: none
   auth: inherit
 }
 
 params:query {
-  recruitment_status: 0
-  only_send_error: 0
-  within3days: 0
+  ~recruitment_status: 0
+  ~only_send_error: 0
+  ~within3days: 0
   ~name: linh
   ~code: USR003
   ~selection_process: 3
@@ -35,4 +35,5 @@ headers {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

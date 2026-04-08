@@ -1,11 +1,11 @@
 meta {
-  name: Create new applicant
+  name: Edit applicant
   type: http
-  seq: 3
+  seq: 4
 }
 
 post {
-  url: {{url-agency}}/applicants/create
+  url: {{url-agency}}/applicants/update
   body: multipartForm
   auth: inherit
 }
@@ -35,9 +35,10 @@ body:multipart-form {
   job_id[]: 99
   job_id[]: 98
   job_id[]: 96
-  cv_file: @file(C:\Users\Tan Lam\Downloads\download_2.jpg)
-  last_name: uuuuu
-  last_name_furigana: uuuuu
+  cv_file: @file(C:\Users\Tan Lam\Downloads\download (1).jpg)
+  last_name: bbbb
+  last_name_furigana: bbbb
+  id: 1636
 }
 
 settings {

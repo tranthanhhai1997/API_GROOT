@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: {{url}}/user/edit
+  url: {{url-visitor}}/user/edit
   body: multipartForm
   auth: inherit
 }
@@ -16,16 +16,19 @@ headers {
 }
 
 body:multipart-form {
-  file: @file(/C:/Users/Tan Lam/Downloads/test.jpg)
-  id: 5
-  ~name: test
-  ~katakanaName: テスト
-  ~phoneNumber: 0901234586
-  ~email: test1@gmail.com
-  ~groupCode: STAFF
+  phoneNumber: 0901234762
+  groupCode: AGENCY
+  id: 156
+  agencyId: 17
+  ~name: Lâm
+  ~katakanaName: Lâm
+  ~email: nev062@example.com
+  ~password: abc123456
   ~status: 1
+  ~file: 
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

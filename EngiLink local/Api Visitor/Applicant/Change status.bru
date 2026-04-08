@@ -1,22 +1,24 @@
 meta {
-  name: Get job detail
+  name: Change status
   type: http
-  seq: 3
+  seq: 11
 }
 
-get {
-  url: {{url-visitor}}/jobs/detail?id=158dddddddddd
+post {
+  url: {{url-visitor}}/applicants/change-status
   body: multipartForm
   auth: inherit
-}
-
-params:query {
-  id: 158dddddddddd
 }
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
   Jil_Token: {{Jil_Token-Visitor}}
+  version: {{version}}
+}
+
+body:multipart-form {
+  status: 0
+  id: 1645
 }
 
 settings {

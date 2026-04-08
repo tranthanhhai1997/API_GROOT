@@ -1,19 +1,26 @@
 meta {
-  name: Home
+  name: Get agency
   type: http
-  seq: 1
+  seq: 10
 }
 
 get {
-  url: {{url-visitor}}/home
+  url: {{url-visitor}}/user/get-agency-list?name=FPT
   body: none
   auth: inherit
+}
+
+params:query {
+  name: FPT
+  ~id: 163
+  ~status: 1
+  ~root_id: 
 }
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
   Jil_Token: {{Jil_Token}}
-  version: {{version}}
+  version: vtest
 }
 
 vars:pre-request {

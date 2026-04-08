@@ -1,0 +1,27 @@
+meta {
+  name: Change recruitment status
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{url-visitor}}/applicants/change-recruitment-status
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token-Visitor}}
+  version: {{version}}
+}
+
+body:multipart-form {
+  recruitment_status: 0
+  id: 1645
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
