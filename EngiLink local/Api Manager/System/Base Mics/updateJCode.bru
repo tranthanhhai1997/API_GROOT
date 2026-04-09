@@ -1,0 +1,22 @@
+meta {
+  name: updateJCode
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{url-manager}}/system/updateJCode
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

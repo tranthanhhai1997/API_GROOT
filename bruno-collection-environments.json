@@ -1,0 +1,180 @@
+{
+  "info": {
+    "type": "bruno-environment",
+    "exportedAt": "2026-04-09T08:36:50.184Z",
+    "exportedUsing": "Bruno/v3.2.2"
+  },
+  "environments": [
+    {
+      "name": "Engillink Local",
+      "variables": [
+        {
+          "name": "url-visitor",
+          "value": "https://api.visitor.engilink.local",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "Jil-Public-Key",
+          "value": "com.learningift.engilink",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "Jil_Token",
+          "value": "r9t0d3oo19odsk372sr5cuuqqe",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "url-manager",
+          "value": "https://api.manager.engilink.local",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "url-agency",
+          "value": "https://api.agency.engilink.local",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "Jil_Token-Agency",
+          "value": "or0bfh2fdkepsqn0f56quqqmas",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "Jil_Token-Visitor",
+          "value": "3qsos4vn9a5vb44k29077v8ken",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "version",
+          "value": "vtest",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        }
+      ]
+    },
+    {
+      "name": "LearninConnectDevelop local",
+      "variables": [
+        {
+          "name": "domain",
+          "value": "https://api.engibase.local",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "version",
+          "value": "vtest",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "App-Version",
+          "value": "1.0",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "device-id",
+          "value": "abcxyz123456",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "Jil-Public-Key",
+          "value": "com.learningift.learninconnect",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "api-ver",
+          "value": "0.0.2",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "token",
+          "value": "8mfm745in1e7h73hvhhggukok9",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "url-release",
+          "value": "https://api.engibase.com",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "url-staging",
+          "value": "https://staging-api.engibase.com",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "version-release",
+          "value": "v1",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "url",
+          "value": "https://api.engibase.local",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "url-v2",
+          "value": "",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        },
+        {
+          "name": "version-v2",
+          "value": "",
+          "type": "text",
+          "enabled": true,
+          "secret": false
+        }
+      ]
+    }
+  ]
+}

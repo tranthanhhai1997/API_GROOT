@@ -1,0 +1,22 @@
+meta {
+  name: testCallFuncRepo
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{url-manager}}/system/testCallFuncRepo
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

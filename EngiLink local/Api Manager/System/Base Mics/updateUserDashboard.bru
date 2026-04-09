@@ -1,0 +1,22 @@
+meta {
+  name: updateUserDashboard
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{url-manager}}/system/updateUserDashboard
+  body: none
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
