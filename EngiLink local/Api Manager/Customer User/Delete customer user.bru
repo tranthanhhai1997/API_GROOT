@@ -5,7 +5,7 @@ meta {
 }
 
 delete {
-  url: {{url-manager}}/customer-user/delete
+  url: {{url}}/customer-user/delete
   body: json
   auth: inherit
 }
@@ -18,10 +18,15 @@ headers {
 
 body:json {
   {
-      "id": "104"
+      "id": "5"
   }
+}
+
+vars:pre-request {
+  Jil_Token: luv2fvgjsl8s11ug2rv0kjh7ae
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
