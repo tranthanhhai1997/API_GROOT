@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: {{url}}/chat/add-messages
+  url: {{url-visitor}}/chat/add-messages
   body: multipartForm
   auth: inherit
 }
@@ -18,12 +18,19 @@ headers {
 body:multipart-form {
   template_id: 11
   content: Hai dep zai 123456
-  asl_id: 3
-  title: test
+  applicant_id: 1528
+  title: test 2222
+  to: nesv039@gmail.com
+  cc_email: thanhhai.s100@gmail.com
   ~attachments[]: @file(/C:/Users/Groot/Pictures/1140073.jpg)
   ~attachments[]: @file(/C:/Users/Groot/Pictures/a.pdf)
 }
 
+vars:pre-request {
+  token: 5o7hvu6jds3q15104s5v9he0lk
+}
+
 settings {
   encodeUrl: true
+  timeout: 0
 }

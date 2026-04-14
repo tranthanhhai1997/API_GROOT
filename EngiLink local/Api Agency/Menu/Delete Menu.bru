@@ -1,11 +1,11 @@
 meta {
-  name: Change user status
+  name: Delete Menu
   type: http
-  seq: 8
+  seq: 3
 }
 
-put {
-  url: {{url}}/user/change-status
+delete {
+  url: {{url-agency}}/menu/delete
   body: json
   auth: inherit
 }
@@ -17,8 +17,7 @@ headers {
 
 body:json {
   {
-      "id": "5",
-      "status": "0"
+    "id": "86"
   }
 }
 

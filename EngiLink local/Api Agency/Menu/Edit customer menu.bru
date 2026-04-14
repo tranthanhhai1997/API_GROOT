@@ -5,14 +5,18 @@ meta {
 }
 
 put {
-  url: {{url}}/menu/edit
-  body: none
+  url: {{url-agency}}/menu/edit
+  body: multipartForm
   auth: inherit
 }
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
   Jil-Token: {{token}}
+}
+
+vars:pre-request {
+  token: ri1h8a2mn23jspiu8k37gcajte
 }
 
 settings {
