@@ -4,10 +4,14 @@ meta {
   seq: 2
 }
 
-post {
-  url: {{url-visitor}}/chat/add-messages
+get {
+  url: {{url-visitor}}/chat/add-messages?applicant_id=1680
   body: multipartForm
   auth: inherit
+}
+
+params:query {
+  applicant_id: 1680
 }
 
 headers {
@@ -18,7 +22,7 @@ headers {
 body:multipart-form {
   template_id: 11
   content: Hai dep zai 123456
-  applicant_id: 1528
+  applicant_id: 1680
   title: test 2222
   to: nesv039@gmail.com
   cc_email: thanhhai.s100@gmail.com

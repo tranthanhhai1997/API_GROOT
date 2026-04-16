@@ -5,12 +5,13 @@ meta {
 }
 
 get {
-  url: {{url-visitor}}/applicants
+  url: {{url-visitor}}/applicants?limit=100
   body: multipartForm
   auth: inherit
 }
 
 params:query {
+  limit: 100
   ~code: jp7bP7Z1Psfke1cK
   ~job_title: 営業職
   ~channel[]: 
@@ -22,12 +23,23 @@ params:query {
   ~selection_process: 3
   ~selection_step: 13
   ~recruiment_status: 1
+  ~new_unprocessed: 1
+  ~interview_not_set: 1
+  ~evaluation_not_entered: 1
+  ~evaluation_not_finalized: 1
+  ~offer_awaiting_acceptance: 1
+  ~onboarding_this_month: 1
+  ~onboarding_next_month: 1
 }
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
   Jil_Token: {{Jil_Token-Visitor}}
   version: {{version}}
+}
+
+body:multipart-form {
+  ~new_unprocessed: 1
 }
 
 settings {

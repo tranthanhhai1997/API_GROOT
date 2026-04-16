@@ -5,12 +5,13 @@ meta {
 }
 
 get {
-  url: {{url-visitor}}/chat/list-applicant-status
+  url: {{url-visitor}}/chat/list-applicant-status?messages_unread=1
   body: none
   auth: inherit
 }
 
 params:query {
+  messages_unread: 1
   ~recruitment_status: 0
   ~only_send_error: 0
   ~within3days: 0
