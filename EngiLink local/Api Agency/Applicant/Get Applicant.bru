@@ -1,24 +1,18 @@
 meta {
-  name: DELETE template
+  name: Get Applicant
   type: http
-  seq: 2
+  seq: 5
 }
 
-delete {
-  url: {{url}}/template/delete
-  body: json
+get {
+  url: {{url-agency}}/applicants
+  body: multipartForm
   auth: inherit
 }
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
   Jil_Token: {{Jil_Token}}
-}
-
-body:json {
-  {
-      "id": 14
-  }
 }
 
 settings {

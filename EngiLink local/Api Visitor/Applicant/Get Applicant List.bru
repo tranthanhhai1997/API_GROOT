@@ -5,12 +5,13 @@ meta {
 }
 
 get {
-  url: {{url-visitor}}/applicants
+  url: {{url-visitor}}/applicants?is_completed=0
   body: multipartForm
   auth: inherit
 }
 
 params:query {
+  is_completed: 0
   ~code: jp7bP7Z1Psfke1cK
   ~job_title: 営業職
   ~channel[]: 
@@ -21,13 +22,16 @@ params:query {
   ~referral_company: FPT Software
   ~selection_process: 3
   ~selection_step: 13
-  ~recruiment_status: 1
 }
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
   Jil_Token: {{Jil_Token-Visitor}}
   version: {{version}}
+}
+
+body:multipart-form {
+  : 
 }
 
 settings {

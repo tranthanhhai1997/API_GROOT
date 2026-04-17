@@ -6,7 +6,7 @@ meta {
 
 post {
   url: {{url-agency}}/applicants/create
-  body: multipartForm
+  body: json
   auth: inherit
 }
 
@@ -14,6 +14,35 @@ headers {
   Jil-Public-Key: {{Jil-Public-Key}}
   Jil_Token-Agency: {{Jil_Token-Agency}}
   version: {{version}}
+}
+
+body:json {
+  {
+    "first_name": "Saepe et qui sint in",
+    "last_name": "Labore ducimus quod",
+    "first_name_furigana": "Quis omnis vel tempo",
+    "last_name_furigana": "Omnis molestiae ipsu",
+    "birth_date": 1649091600,
+    "gender": "男性",
+    "employment_status": 2,
+    "work_history_detail": "Inventore molestiae",
+    "contact_memo": "Eos nostrud aut off",
+    "desired_annual_income": 123,
+    "desired_job_change_timing": 2,
+    "postal_code": "1000000",
+    "address_detail": "東京都, 千代田区, ",
+    "phone_1": "1222222",
+    "email_1": "takyvicod@mailinator.com",
+    "nearest_station": "Nobis ea vel molestiae rem elit ipsa facilis sed",
+    "commute_transportation": "自転車",
+    "desired_min_annual_income": 123123,
+    "current_annual_income": 123123123123,
+    "desired_work_location": "Minim rerum ad volup",
+    "apartment_name": "Exercitation accusam",
+    "other_expectations": "Veniam ut tempora n",
+  //   "cv_file": [],
+    "job_id": [277]
+  }
 }
 
 body:multipart-form {
@@ -32,12 +61,12 @@ body:multipart-form {
   email_1: agency_test_1@gmail.com
   nearest_station: Thảo Điền station
   commute_transportation: 電車
-  job_id[]: 99
-  job_id[]: 98
-  job_id[]: 96
+  job_id[]: 271
   cv_file: @file(C:\Users\Tan Lam\Downloads\download_2.jpg)
   last_name: uuuuu
   last_name_furigana: uuuuu
+  ~job_id[]: 98
+  ~job_id[]: 96
 }
 
 settings {
