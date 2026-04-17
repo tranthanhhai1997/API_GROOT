@@ -1,21 +1,17 @@
 meta {
   name: Logout
   type: http
-  seq: 5
+  seq: 11
 }
 
 post {
-  url: {{url-agency}}/logout
+  url: {{url-visitor}}/logout
   body: multipartForm
   auth: inherit
 }
 
 headers {
   Jil-Public-Key: com.learningift.engilink
-}
-
-body:multipart-form {
-  ~: 
 }
 
 settings {
