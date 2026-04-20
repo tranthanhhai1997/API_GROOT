@@ -1,19 +1,13 @@
 meta {
-  name: Get jobsite list
+  name: Get Applicant
   type: http
-  seq: 1
+  seq: 5
 }
 
 get {
-  url: {{url}}/jobsite/list
-  body: none
+  url: {{url-agency}}/applicants
+  body: multipartForm
   auth: inherit
-}
-
-params:query {
-  ~name: マイナビ転職
-  ~account: account@mynavi.jp
-  ~status: 1
 }
 
 headers {

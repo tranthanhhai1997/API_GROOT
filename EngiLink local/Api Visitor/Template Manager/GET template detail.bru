@@ -5,13 +5,13 @@ meta {
 }
 
 get {
-  url: {{url}}/template/detail?id=10
+  url: {{url-visitor}}/template/detail?id=13
   body: multipartForm
   auth: inherit
 }
 
 params:query {
-  id: 10
+  id: 13
 }
 
 headers {
@@ -21,4 +21,5 @@ headers {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

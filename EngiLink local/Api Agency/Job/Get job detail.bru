@@ -5,18 +5,23 @@ meta {
 }
 
 get {
-  url: {{url-agency}}/jobs/detail?id=158
+  url: {{url-agency}}/jobs/detail?id=277
   body: multipartForm
   auth: inherit
 }
 
 params:query {
-  id: 158
+  id: 277
 }
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
-  Jil_Token: {{Jil_Token}}
+  Jil_Token: {{Jil_Token-Agency}}
+}
+
+vars:pre-request {
+  Jil_Token: or0bfh2fdkepsqn0f56quqqmas
+  Jil_Token-Agency: or0bfh2fdkepsqn0f56quqqmas
 }
 
 settings {
