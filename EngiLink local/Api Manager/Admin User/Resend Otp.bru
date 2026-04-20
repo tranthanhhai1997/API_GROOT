@@ -1,18 +1,17 @@
 meta {
-  name: Reset PassWord Manager
+  name: Resend Otp
   type: http
-  seq: 11
+  seq: 9
 }
 
 post {
-  url: {{url-manager}}/user/reset-password
+  url: {{url-manager}}/user/resend-otp
   body: multipartForm
   auth: inherit
 }
 
 headers {
-  Jil-Public-Key: {{Jil-Public-Key}}
-  version: {{version}}
+  Jil-Public-Key: com.learningift.engilink
 }
 
 body:multipart-form {
