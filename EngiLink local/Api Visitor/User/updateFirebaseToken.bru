@@ -1,0 +1,24 @@
+meta {
+  name: updateFirebaseToken
+  type: http
+  seq: 14
+}
+
+post {
+  url: {{url-visitor}}/user/update-firebase-token
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: com.learningift.engilink
+}
+
+body:multipart-form {
+  firebase_token: 1116666111
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

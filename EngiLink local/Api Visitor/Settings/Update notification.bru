@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: {{url}}/settings/notification
+  url: {{url-visitor}}/settings/notification
   body: multipartForm
   auth: inherit
 }
@@ -16,7 +16,7 @@ headers {
 }
 
 body:multipart-form {
-  mail_apply: 1
+  mail_apply: 0
   desktop_apply: 1
   mail_message: 1
   desktop_message: 1
@@ -28,6 +28,11 @@ body:multipart-form {
   desktop_job_expire_notice: 1
 }
 
+vars:pre-request {
+  token: 5o7hvu6jds3q15104s5v9he0lk
+}
+
 settings {
   encodeUrl: true
+  timeout: 0
 }

@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{url}}/settings/notification
+  url: {{url-visitor}}/settings/notification
   body: none
   auth: inherit
 }
@@ -15,6 +15,11 @@ headers {
   Jil-Token: {{token}}
 }
 
+vars:pre-request {
+  token: 5o7hvu6jds3q15104s5v9he0lk
+}
+
 settings {
   encodeUrl: true
+  timeout: 0
 }
