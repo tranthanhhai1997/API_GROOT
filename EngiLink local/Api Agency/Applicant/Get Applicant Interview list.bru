@@ -1,11 +1,11 @@
 meta {
-  name: Get Applicant Interview List
+  name: Get Applicant Interview list
   type: http
-  seq: 12
+  seq: 6
 }
 
 get {
-  url: {{url-visitor}}/applicants/applicant-interview-list?id=1703
+  url: {{url-agency}}/applicants/applicant-interview-list?id=1703
   body: multipartForm
   auth: inherit
 }
@@ -16,8 +16,7 @@ params:query {
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
-  Jil_Token: {{Jil_Token-Visitor}}
-  version: {{version}}
+  Jil_Token: {{Jil_Token}}
 }
 
 settings {
