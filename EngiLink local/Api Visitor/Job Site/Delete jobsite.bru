@@ -5,7 +5,7 @@ meta {
 }
 
 delete {
-  url: {{url}}/jobsite/delete
+  url: {{url-visitor}}/jobsite/delete
   body: json
   auth: inherit
 }
@@ -17,10 +17,11 @@ headers {
 
 body:json {
   {
-      "ids": 11
+      "ids": 102
   }
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{url}}/jobsite/list
+  url: {{url-visitor}}/jobsite/list
   body: none
   auth: inherit
 }
@@ -23,4 +23,5 @@ headers {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

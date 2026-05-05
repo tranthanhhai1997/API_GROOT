@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: {{url}}/jobsite/edit
+  url: {{url-visitor}}/jobsite/edit
   body: multipartForm
   auth: inherit
 }
@@ -22,9 +22,10 @@ body:multipart-form {
   url_login: https://www.linkedin.com/login
   url_chat: https://www.linkedin.com/chat
   configs: {"customer_id":"GreeCusID7","staff_id":"GreeStaffE","site":"green","allow_multiple_login":false}
-  id: 9
+  id: 102
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

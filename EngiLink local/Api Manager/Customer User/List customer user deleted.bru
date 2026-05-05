@@ -1,11 +1,11 @@
 meta {
-  name: DELETE template
+  name: List customer user deleted
   type: http
-  seq: 2
+  seq: 7
 }
 
-delete {
-  url: {{url-visitor}}/template/delete
+get {
+  url: {{url-manager}}/customer-user/list-deleted
   body: json
   auth: inherit
 }
@@ -13,12 +13,12 @@ delete {
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
   Jil_Token: {{Jil_Token}}
+  version: {{version}}
 }
 
 body:json {
-  {
-      "id": 99
-  }
+  
+  
 }
 
 settings {
