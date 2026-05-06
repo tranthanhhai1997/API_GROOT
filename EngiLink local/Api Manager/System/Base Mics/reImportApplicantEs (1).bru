@@ -1,22 +1,23 @@
 meta {
-  name: Get selection flow detail
+  name: reImportApplicantEs (1)
   type: http
-  seq: 6
+  seq: 15
 }
 
 get {
-  url: {{url-manager}}/selection-flows/detail?id=87
+  url: {{url-manager}}/system/execute?action=reImportApplicantEs
   body: none
   auth: inherit
 }
 
 params:query {
-  id: 87
+  action: reImportApplicantEs
 }
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
   Jil_Token: {{Jil_Token}}
+  version: {{version}}
 }
 
 settings {

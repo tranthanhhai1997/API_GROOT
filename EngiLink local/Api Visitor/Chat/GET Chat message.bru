@@ -5,20 +5,24 @@ meta {
 }
 
 get {
-  url: {{url}}/chat/messages?asl_id=3
+  url: {{url-visitor}}/chat/messages?id=1635&keyword=Re: [Toz8ElimYsik51va] test mail 2222
   body: none
   auth: inherit
 }
 
 params:query {
-  asl_id: 3
+  id: 1635
+  keyword: Re: [Toz8ElimYsik51va] test mail 2222
+  ~from_date: 2026-04-07
+  ~to_date: 2026-04-09
 }
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
-  Jil-Token: {{token}}
+  Jil-Token: {{Jil-Token-Visitor}}
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
