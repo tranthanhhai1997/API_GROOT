@@ -1,0 +1,28 @@
+meta {
+  name: importFromExcel
+  type: http
+  seq: 12
+}
+
+post {
+  url: https://api-manager.eng-link.g-root.com/system/importFromExcel
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil-Token: {{Jil_Token}}
+  version: {{version}}
+}
+
+body:multipart-form {
+  root_id: 3
+  root_code: Qic45541Lnakj14h
+  file: @file(C:\Users\Groot\Downloads\MatterList.xlsx)
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

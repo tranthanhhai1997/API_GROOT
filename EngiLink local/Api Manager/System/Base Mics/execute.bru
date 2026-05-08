@@ -1,0 +1,31 @@
+meta {
+  name: execute
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{url-manager}}/system/execute?action=importFromExcel
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  action: importFromExcel
+}
+
+headers {
+  Jil-Public-Key: {{Jil-Public-Key}}
+  Jil_Token: {{Jil_Token}}
+  version: {{version}}
+}
+
+body:multipart-form {
+  root_id: 1
+  root_code: 1
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
