@@ -1,0 +1,36 @@
+meta {
+  name: Hard delete customer user
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{url-manager}}/customer-user/hard-delete
+  body: json
+  auth: inherit
+}
+
+headers {
+  Jil_Token: {{Jil_Token}}
+  Jil-Public-Key: {{Jil-Public-Key}}
+  version: {{version}}
+}
+
+body:json {
+  {
+    "id": 168
+  }
+}
+
+body:multipart-form {
+  id: 168
+}
+
+vars:pre-request {
+  Jil_Token: luv2fvgjsl8s11ug2rv0kjh7ae
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

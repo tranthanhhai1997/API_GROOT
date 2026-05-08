@@ -1,19 +1,17 @@
 meta {
-  name: Get jobsite list
+  name: Get Applicant Interview list
   type: http
-  seq: 1
+  seq: 6
 }
 
 get {
-  url: {{url-visitor}}/jobsite/list
-  body: none
+  url: {{url-agency}}/applicants/applicant-interview-list?id=1703
+  body: multipartForm
   auth: inherit
 }
 
 params:query {
-  ~name: マイナビ転職
-  ~account: account@mynavi.jp
-  ~status: 1
+  id: 1703
 }
 
 headers {

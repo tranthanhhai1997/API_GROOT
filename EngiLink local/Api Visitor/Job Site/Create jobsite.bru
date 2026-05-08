@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: {{url}}/jobsite/create
+  url: {{url-visitor}}/jobsite/create
   body: multipartForm
   auth: inherit
 }
@@ -26,4 +26,5 @@ body:multipart-form {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

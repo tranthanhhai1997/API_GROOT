@@ -1,24 +1,23 @@
 meta {
-  name: Get jobsite list
+  name: reImportApplicantEs (1)
   type: http
-  seq: 1
+  seq: 15
 }
 
 get {
-  url: {{url-visitor}}/jobsite/list
+  url: {{url-manager}}/system/execute?action=reImportApplicantEs
   body: none
   auth: inherit
 }
 
 params:query {
-  ~name: マイナビ転職
-  ~account: account@mynavi.jp
-  ~status: 1
+  action: reImportApplicantEs
 }
 
 headers {
   Jil-Public-Key: {{Jil-Public-Key}}
   Jil_Token: {{Jil_Token}}
+  version: {{version}}
 }
 
 settings {

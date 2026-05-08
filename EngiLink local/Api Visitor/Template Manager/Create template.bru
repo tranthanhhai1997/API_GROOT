@@ -5,11 +5,12 @@ meta {
 }
 
 post {
-  url: 
-  body: none
+  url: {{url-visitor}}/template/create
+  body: multipartForm
   auth: inherit
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
