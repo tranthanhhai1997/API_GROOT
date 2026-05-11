@@ -5,16 +5,17 @@ meta {
 }
 
 get {
-  url: {{url-visitor}}/chat/messages?id=1635&keyword=Re: [Toz8ElimYsik51va] test mail 2222
+  url: {{url-visitor}}/chat/messages?id=1635&from_date=2026-04-07
   body: none
   auth: inherit
 }
 
 params:query {
   id: 1635
-  keyword: Re: [Toz8ElimYsik51va] test mail 2222
-  ~from_date: 2026-04-07
+  from_date: 2026-04-07
+  ~keyword: Re: [Toz8ElimYsik51va] test mail 2222
   ~to_date: 2026-04-09
+  ~page: 3
 }
 
 headers {
